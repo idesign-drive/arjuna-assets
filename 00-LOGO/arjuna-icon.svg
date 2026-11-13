@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 86.72 86.72">
+  <!-- Generator: Adobe Illustrator 29.8.2, SVG Export Plug-In . SVG Version: 2.1.1 Build 3)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #8dc63f;
+      }
+
+      .st1 {
+        fill: #fff;
+      }
+
+      .st2 {
+        fill: #b6b7ba;
+      }
+
+      .st3 {
+        fill: #7c7d7f;
+      }
+
+      .st4 {
+        fill: #010306;
+      }
+    </style>
+  </defs>
+  <rect class="st0" x="28.91" y="28.91" width="28.91" height="28.91"/>
+  <g>
+    <polygon class="st4" points="0 0 0 28.91 14.45 14.45 0 0"/>
+    <polygon class="st2" points="28.91 28.91 28.91 0 14.45 14.45 28.91 28.91"/>
+    <polygon class="st3" points="28.91 0 0 0 14.45 14.45 28.91 0"/>
+    <polygon class="st1" points="0 28.91 28.91 28.91 14.45 14.45 0 28.91"/>
+  </g>
+  <g>
+    <polygon class="st4" points="57.81 0 28.91 0 43.36 14.45 57.81 0"/>
+    <polygon class="st2" points="28.91 28.91 57.81 28.91 43.36 14.45 28.91 28.91"/>
+    <polygon class="st3" points="57.81 28.91 57.81 0 43.36 14.45 57.81 28.91"/>
+    <polygon class="st1" points="28.91 0 28.91 28.91 43.36 14.45 28.91 0"/>
+  </g>
+  <g>
+    <polygon class="st4" points="86.72 28.91 86.72 0 72.27 14.45 86.72 28.91"/>
+    <polygon class="st2" points="57.81 0 57.81 28.91 72.27 14.45 57.81 0"/>
+    <polygon class="st3" points="57.81 28.91 86.72 28.91 72.27 14.45 57.81 28.91"/>
+    <polygon class="st1" points="86.72 0 57.81 0 72.27 14.45 86.72 0"/>
+  </g>
+  <g>
+    <polygon class="st4" points="57.81 57.81 86.72 57.81 72.27 43.36 57.81 57.81"/>
+    <polygon class="st2" points="86.72 28.91 57.81 28.91 72.27 43.36 86.72 28.91"/>
+    <polygon class="st3" points="57.81 28.91 57.81 57.81 72.27 43.36 57.81 28.91"/>
+    <polygon class="st1" points="86.72 57.81 86.72 28.91 72.27 43.36 86.72 57.81"/>
+  </g>
+  <g>
+    <polygon class="st4" points="28.91 28.91 0 28.91 14.45 43.36 28.91 28.91"/>
+    <polygon class="st2" points="0 57.81 28.91 57.81 14.45 43.36 0 57.81"/>
+    <polygon class="st3" points="28.91 57.81 28.91 28.91 14.45 43.36 28.91 57.81"/>
+    <polygon class="st1" points="0 28.91 0 57.81 14.45 43.36 0 28.91"/>
+  </g>
+  <g>
+    <polygon class="st4" points="28.91 86.72 28.91 57.81 14.45 72.27 28.91 86.72"/>
+    <polygon class="st2" points="0 57.81 0 86.72 14.45 72.27 0 57.81"/>
+    <polygon class="st3" points="0 86.72 28.91 86.72 14.45 72.27 0 86.72"/>
+    <polygon class="st1" points="28.91 57.81 0 57.81 14.45 72.27 28.91 57.81"/>
+  </g>
+  <g>
+    <polygon class="st4" points="57.81 57.81 57.81 86.72 72.27 72.27 57.81 57.81"/>
+    <polygon class="st2" points="86.72 86.72 86.72 57.81 72.27 72.27 86.72 86.72"/>
+    <polygon class="st3" points="86.72 57.81 57.81 57.81 72.27 72.27 86.72 57.81"/>
+    <polygon class="st1" points="57.81 86.72 86.72 86.72 72.27 72.27 57.81 86.72"/>
+  </g>
+  <g>
+    <polygon class="st4" points="28.91 86.72 57.81 86.72 43.36 72.27 28.91 86.72"/>
+    <polygon class="st2" points="57.81 57.81 28.91 57.81 43.36 72.27 57.81 57.81"/>
+    <polygon class="st3" points="28.91 57.81 28.91 86.72 43.36 72.27 28.91 57.81"/>
+    <polygon class="st1" points="57.81 86.72 57.81 57.81 43.36 72.27 57.81 86.72"/>
+  </g>
+</svg>
