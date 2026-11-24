@@ -7,25 +7,31 @@
 <title>Hotel Arjuna — A Different Perspective</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Alata&display=swap" rel="stylesheet">
+
+
 <style>
 :root{--ink:#111211;--ink2:#191b19;--ivory:#f0eee8;--muted:#a7a69f;--line:rgba(240,238,232,.17);--lime:#8dc63f;--sand:#c9c2b4;--ease:cubic-bezier(.22,.75,.2,1)}
-*{box-sizing:border-box}html{scroll-behavior:smooth;background:var(--ink)}body{margin:0;background:var(--ink);color:var(--ivory);font-family:"DM Sans",sans-serif;font-weight:300;overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}img{display:block;width:100%;height:100%;object-fit:cover}.serif{font-family:"Playfair Display",serif;font-weight:400}.brand-accent{color:var(--lime)!important}.eyebrow{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}.wrap{width:min(1320px,calc(100% - 9vw));margin:auto}.section{position:relative;padding:145px 0;overflow:hidden}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:54px}.section-head h2{font-size:clamp(42px,6vw,82px);line-height:.98;letter-spacing:-.045em;margin:16px 0 0}.section-head p{max-width:330px;color:var(--muted);font-size:13px;line-height:1.8;margin:0 0 5px}.grain{position:fixed;inset:0;pointer-events:none;z-index:30;opacity:.045;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E")}.pattern{position:absolute;width:260px;height:260px;background-image:url("00-LOGO/arjuna-pattern.svg");background-repeat:repeat;background-size:72px 72px;opacity:.12;pointer-events:none}.pattern.rotate90{transform:rotate(90deg)}.pattern.rotate180{transform:rotate(180deg)}.pattern.rotate270{transform:rotate(270deg)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;background:var(--ink)}body{margin:0;background:var(--ink);color:var(--ivory);font-family:"DM Sans",sans-serif;font-weight:300;overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}img{display:block;width:100%;height:100%;object-fit:cover}.serif{font-family:"Alata",sans-serif;font-weight:400}.brand-accent{color:var(--lime)!important}.eyebrow{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}.wrap{width:min(1320px,calc(100% - 9vw));margin:auto}.section{position:relative;padding:145px 0;overflow:hidden}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:54px}.section-head h2{font-size:clamp(42px,6vw,82px);line-height:.98;letter-spacing:-.045em;margin:16px 0 0}.section-head p{max-width:330px;color:var(--muted);font-size:13px;line-height:1.8;margin:0 0 5px}.grain{position:fixed;inset:0;pointer-events:none;z-index:30;opacity:.045;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E")}.pattern{position:absolute;width:260px;height:260px;background-image:url("https://cdn.jsdelivr.net/gh/idesign-drive/arjuna-assets@main/00-LOGO/arjuna-pattern.svg");background-repeat:repeat;background-size:72px 72px;opacity:.12;pointer-events:none}.pattern.rotate90{transform:rotate(90deg)}.pattern.rotate180{transform:rotate(180deg)}.pattern.rotate270{transform:rotate(270deg)}
 /* nav */.nav{position:fixed;z-index:40;top:0;left:0;width:100%;padding:25px 4.5vw;display:flex;align-items:center;justify-content:space-between;transition:all .55s var(--ease);border-bottom:1px solid transparent}.nav.scrolled{padding-top:15px;padding-bottom:15px;background:rgba(17,18,17,.78);backdrop-filter:blur(22px);border-color:var(--line)}.brand{display:flex;align-items:center;gap:12px}.brand img{width:38px;height:38px;object-fit:contain}.brand span{font-size:10px;letter-spacing:.22em;text-transform:uppercase}.navlinks{display:flex;gap:34px;align-items:center}.navlinks a{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#d4d2cb;position:relative;padding:8px 0}.navlinks a:after{content:"";position:absolute;left:0;bottom:1px;width:100%;height:1px;background:var(--lime);transform:scaleX(0);transform-origin:right;transition:transform .4s var(--ease)}.navlinks a:hover:after{transform:scaleX(1);transform-origin:left}.nav-cta,.outline-btn{border:1px solid rgba(240,238,232,.5);padding:14px 21px;font-size:9px;letter-spacing:.19em;text-transform:uppercase;display:inline-flex;align-items:center;gap:18px;background:transparent;transition:all .4s var(--ease);cursor:pointer}.nav-cta:hover,.outline-btn:hover{background:var(--ivory);color:var(--ink);border-color:var(--ivory);transform:translateY(-2px)}.menu-toggle{display:none;background:none;border:0;font-size:22px}
 /* hero */.hero{height:100svh;min-height:690px;position:relative;display:flex;align-items:end;padding:0 7vw 14vh;isolation:isolate;overflow:hidden}.hero-media{position:absolute;inset:0;z-index:-2}.hero-media img{filter:brightness(.58) saturate(.72)}.hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(9,10,9,.75),rgba(9,10,9,.16) 72%),linear-gradient(0deg,rgba(9,10,9,.75),transparent 62%)}.hero-content{max-width:900px}.hero-kicker{display:flex;align-items:center;gap:15px;margin-bottom:25px;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#d6d3c9}.hero-kicker:before{content:"";width:42px;height:1px;background:var(--lime)}.hero h1{font-size:clamp(50px,8vw,118px);line-height:.86;letter-spacing:-.065em;margin:0 0 52px;max-width:1000px}.hero h1 em{font-weight:400;color:#d0c9b9}.hero h1 em.brand-accent{color:var(--lime)}.hero-bottom{display:flex;align-items:end;justify-content:space-between;gap:35px}.hero-bottom p{font-size:13px;line-height:1.8;color:#d0cec7;max-width:360px;margin:0}.hero-actions{display:flex;gap:12px}.scroll-cue{position:absolute;right:4.5vw;bottom:14vh;writing-mode:vertical-rl;font-size:9px;letter-spacing:.2em;color:#c4c1b8;display:flex;gap:15px;align-items:center}.scroll-cue:after{content:"";height:55px;width:1px;background:linear-gradient(var(--lime),transparent)}.hero-index{position:absolute;top:50%;right:5vw;font-size:10px;letter-spacing:.2em;color:rgba(255,255,255,.65);writing-mode:vertical-rl}.hero-index b{color:var(--lime);font-weight:400}
-/* intro */.intro{position:relative;background:#e9e6de;color:#171917;padding:145px 0 160px;isolation:isolate}.intro .eyebrow{color:#77776f}.intro-grid{display:grid;grid-template-columns:1.18fr .82fr;gap:7%;align-items:center;position:relative;z-index:1}.intro h2{font-size:clamp(42px,6.5vw,88px);line-height:.99;letter-spacing:-.05em;margin:20px 0}.intro h2 span{color:#88877f}.intro h2 .intro-period{color:#171917}.intro-copy{max-width:410px;margin-left:auto;align-self:center;transform:translateY(70px)}.intro-copy p{font-size:14px;line-height:2;color:#66675f}.intro-mark{position:absolute;right:0;top:0;width:100%;height:100%;background-image:url('00-LOGO/arjuna-pattern.svg');background-repeat:no-repeat;background-position:right center;background-size:auto 100%;opacity:.085;pointer-events:none;z-index:0}
+/* intro */.intro{position:relative;background:#e9e6de;color:#171917;padding:145px 0 160px;isolation:isolate}.intro .eyebrow{color:#77776f}.intro-grid{display:grid;grid-template-columns:1.18fr .82fr;gap:7%;align-items:center;position:relative;z-index:1}.intro h2{font-size:clamp(42px,6.5vw,88px);line-height:.99;letter-spacing:-.05em;margin:20px 0}.intro h2 span{color:#88877f}.intro h2 .intro-period{color:#171917}.intro-copy{max-width:410px;margin-left:auto;align-self:center;transform:translateY(70px)}.intro-copy p{font-size:14px;line-height:2;color:#66675f}.intro-mark{position:absolute;right:0;top:0;width:100%;height:100%;background-image:url('https://cdn.jsdelivr.net/gh/idesign-drive/arjuna-assets@main/00-LOGO/arjuna-pattern.svg');background-repeat:no-repeat;background-position:right center;background-size:auto 100%;opacity:.085;pointer-events:none;z-index:0}
+.intro-architecture-pattern{width:100%;height:auto;line-height:0;overflow:hidden;background:#e9e6de}
+.intro-architecture-pattern img{display:block;width:100%;height:auto;max-width:none}
 /* architecture */.architecture{background:#171917}.architecture-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:18px;align-items:stretch}.architecture-main{height:690px;position:relative;overflow:hidden}.architecture-main img{transition:transform 1.2s var(--ease);filter:saturate(.75)}.architecture-main:hover img{transform:scale(1.035)}.architecture-side{display:grid;grid-template-rows:1fr 1fr;gap:18px}.architecture-side figure{margin:0;position:relative;overflow:hidden;min-height:330px}.architecture-side img{transition:transform 1s var(--ease);filter:saturate(.72)}.architecture-side figure:hover img{transform:scale(1.05)}.image-caption{position:absolute;left:25px;bottom:22px;font-size:9px;letter-spacing:.2em;text-transform:uppercase;text-shadow:0 1px 12px #000}.arch-note{display:flex;justify-content:space-between;align-items:center;margin-top:28px;color:var(--muted);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
 /* gallery */.gallery{background:#101110}.gallery-grid{display:grid;grid-template-columns:1.15fr .85fr 1fr;grid-template-rows:260px 260px;gap:14px}.gallery-item{position:relative;overflow:hidden;cursor:pointer;background:#282a27}.gallery-item:nth-child(1){grid-row:span 2}.gallery-item:nth-child(4){grid-column:2/4}.gallery-item img{transition:transform .9s var(--ease),filter .6s}.gallery-item:hover img{transform:scale(1.045);filter:brightness(.82)}.gallery-item:after{content:"↗";position:absolute;right:18px;bottom:15px;font-size:19px;opacity:0;transform:translate(-5px,5px);transition:.4s}.gallery-item:hover:after{opacity:1;transform:none}
-/* rooms */.rooms{background:#1b1d1b}.room-feature{display:grid;grid-template-columns:1.1fr .9fr;min-height:590px;background:#242724}.room-image{position:relative;overflow:hidden;cursor:pointer}.room-image img{transition:transform 1.2s var(--ease);filter:saturate(.72)}.room-image:hover img{transform:scale(1.04)}.room-info{padding:clamp(30px,5vw,75px);display:flex;flex-direction:column;justify-content:center}.room-info h3{font-size:clamp(38px,5vw,64px);line-height:1;margin:18px 0}.room-info p{font-size:13px;line-height:1.9;color:var(--muted);max-width:390px}.room-meta{display:flex;gap:30px;margin:28px 0 35px}.room-meta div{display:flex;flex-direction:column;gap:7px}.room-meta strong{font-size:15px;font-weight:400}.room-meta span{font-size:9px;color:var(--muted);letter-spacing:.16em;text-transform:uppercase}.room-choices{display:flex;gap:9px;margin-top:16px}.room-chip{border:1px solid var(--line);padding:10px 13px;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);cursor:pointer;transition:.3s;background:none}.room-chip.active,.room-chip:hover{border-color:var(--lime);color:var(--ivory)}
+/* rooms */.rooms{background:#1b1d1b}.room-feature{display:grid;grid-template-columns:1.1fr .9fr;height:590px;min-height:590px;background:#242724}.room-image{position:relative;overflow:hidden;cursor:pointer}.room-image img{transition:transform 1.2s var(--ease);filter:saturate(.72)}.room-image:hover img{transform:scale(1.04)}.room-info{padding:clamp(30px,5vw,75px);display:flex;flex-direction:column;justify-content:center}.room-info h3{font-size:clamp(38px,5vw,64px);line-height:1;margin:18px 0}.room-info p{font-size:13px;line-height:1.9;color:var(--muted);max-width:390px}.room-meta{display:flex;gap:30px;margin:28px 0 35px}.room-meta div{display:flex;flex-direction:column;gap:7px}.room-meta strong{font-size:15px;font-weight:400}.room-meta span{font-size:9px;color:var(--muted);letter-spacing:.16em;text-transform:uppercase}.room-choices{display:flex;gap:9px;margin-top:16px}.room-chip{border:1px solid var(--line);padding:10px 13px;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);cursor:pointer;transition:.3s;background:none}.room-chip.active,.room-chip:hover{border-color:var(--lime);color:var(--ivory)}
 /* dining */.dining{background:#e9e6de;color:#171917}.dining .eyebrow{color:#77776f}.dining .section-head p{color:#696a62}.dining-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center}.dining-copy h2{font-size:clamp(44px,6vw,78px);line-height:.96;letter-spacing:-.05em;margin:20px 0}.dining-copy p{font-size:13px;line-height:1.9;color:#66675f;max-width:350px}.dining-photo{height:570px;position:relative;overflow:hidden;cursor:pointer;background:#d7d3c9}.dining-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;opacity:1;transition:opacity 1.45s ease;filter:saturate(.78);transform:none}.dining-photo img.dining-next{z-index:2;opacity:0;transform:none}.dining-photo img.dining-next.is-visible{opacity:1;transform:none}.dining-photo img.dining-current.is-fading{opacity:0;transform:none}.dining-photo:hover img{transform:none}.dining-photo:after{content:"VIEW DINING ↗";position:absolute;right:25px;bottom:25px;color:#fff;font-size:9px;letter-spacing:.2em}
-/* testimonials */.testimonials{background:#111311;overflow:hidden;isolation:isolate}.testimonials:before{content:"";position:absolute;inset:0;background-image:url("00-LOGO/arjuna-pattern.svg");background-repeat:repeat;background-size:220px 220px;opacity:.055;pointer-events:none;z-index:-1}.testimonial-shell{max-width:970px;margin:auto;text-align:center;position:relative}.stars{color:var(--lime);letter-spacing:.35em;font-size:42px;margin:45px 0 28px}.quote{font-family:"Playfair Display",serif;font-size:clamp(21px,2.8vw,34px);line-height:1.35;min-height:125px;letter-spacing:-.02em;max-width:850px;margin-inline:auto}.guest{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:25px}.test-controls{display:flex;justify-content:center;align-items:center;gap:25px;margin-top:42px}.round-btn{width:46px;height:46px;border:1px solid var(--line);border-radius:50%;background:transparent;cursor:pointer;transition:all .35s var(--ease)}.round-btn:hover{background:var(--ivory);color:var(--ink);transform:scale(1.08)}.test-count{font-size:10px;letter-spacing:.15em;color:var(--muted)}
+/* testimonials */.testimonials{background:#111311;overflow:hidden;isolation:isolate}.testimonials:before{content:"";position:absolute;inset:0;background-image:url("https://cdn.jsdelivr.net/gh/idesign-drive/arjuna-assets@main/00-LOGO/arjuna-pattern.svg");background-repeat:repeat;background-size:220px 220px;opacity:.055;pointer-events:none;z-index:-1}.testimonial-shell{max-width:970px;margin:auto;text-align:center;position:relative}.stars{color:var(--lime);letter-spacing:.35em;font-size:42px;margin:45px 0 28px}.quote{font-family:"Alata",sans-serif;font-size:clamp(21px,2.8vw,34px);line-height:1.35;min-height:125px;letter-spacing:-.02em;max-width:850px;margin-inline:auto}.guest{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:25px}.test-controls{display:flex;justify-content:center;align-items:center;gap:25px;margin-top:42px}.round-btn{width:46px;height:46px;border:1px solid var(--line);border-radius:50%;background:transparent;cursor:pointer;transition:all .35s var(--ease)}.round-btn:hover{background:var(--ivory);color:var(--ink);transform:scale(1.08)}.test-count{font-size:10px;letter-spacing:.15em;color:var(--muted)}
 /* social */.social{background:#e9e6de;color:#171917;padding:125px 0 140px}.social .eyebrow{color:#77776f}.social-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:45px}.social-heading h2{font-size:clamp(42px,6vw,76px);line-height:.95;margin:15px 0 0;letter-spacing:-.05em}.social-heading a{font-size:10px;letter-spacing:.16em;text-transform:uppercase;border-bottom:1px solid #99978e;padding-bottom:9px}.social-track-wrap{overflow:visible;position:relative}.social-track{display:flex;gap:15px;width:max-content;animation:marquee 38s linear infinite;padding:15px 0}.social-track-wrap:hover .social-track{animation-play-state:paused}.social-card{width:clamp(190px,21vw,290px);height:clamp(230px,25vw,330px);overflow:visible;position:relative;transition:transform .5s var(--ease);z-index:1}.social-card a{display:block;width:100%;height:100%;overflow:hidden;position:relative;transition:transform .45s var(--ease),box-shadow .45s var(--ease)}.social-card:hover{z-index:5}.social-card:hover a{transform:scale(1.075);box-shadow:0 22px 45px rgba(0,0,0,.2)}.social-card img{filter:saturate(.8);transition:filter .4s}.social-card:hover img{filter:saturate(1.05)}.social-card:after{content:"↗";position:absolute;right:13px;bottom:11px;color:white;font-size:17px;opacity:0;transition:.3s;pointer-events:none}.social-card:hover:after{opacity:1}@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}.social-note{font-size:10px;color:#77776f;letter-spacing:.12em;text-transform:uppercase;margin-top:22px}
 /* contact */.contact{background:#171917}.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:stretch}.contact-copy h2{font-size:clamp(44px,6vw,76px);line-height:.95;margin:18px 0 28px}.contact-copy p{font-size:13px;line-height:1.9;color:var(--muted)}.contact-details{margin-top:40px;display:grid;gap:22px}.contact-details span{display:block;color:var(--muted);font-size:9px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:7px}.contact-details strong{font-size:14px;font-weight:400}.map{min-height:470px;position:relative;overflow:hidden;background:#282c29}.map iframe{width:100%;height:100%;min-height:470px;border:0;filter:grayscale(1) invert(.88) contrast(.8) brightness(.85)}.map-label{position:absolute;left:22px;bottom:22px;background:rgba(17,18,17,.88);backdrop-filter:blur(14px);padding:15px 18px;font-size:10px;letter-spacing:.12em;text-transform:uppercase}.map-marker-overlay{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);width:38px;height:46px;color:var(--lime);filter:drop-shadow(0 3px 7px rgba(0,0,0,.55));pointer-events:none;z-index:2}.map-marker-overlay svg{width:100%;height:100%;display:block}
-/* cta footer */.final-cta{min-height:470px;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;background:linear-gradient(rgba(10,11,10,.66),rgba(10,11,10,.78)),url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=85") center/cover}.final-cta .cta-pattern{position:absolute;left:0;top:0;width:100%;height:100%;background-image:url('00-LOGO/arjuna-pattern.svg');background-repeat:no-repeat;background-position:left center;background-size:auto 100%;opacity:.15;pointer-events:none}.final-cta h2{font-size:clamp(48px,7vw,92px);line-height:.95;margin:18px auto 30px;max-width:850px}.final-cta h2 .cta-regular{font-style:normal;color:var(--ivory)}.final-cta h2 em{font-style:italic}.footer{padding:55px 0 120px;background:#0c0d0c}.footer-top{display:flex;justify-content:space-between;align-items:center;padding-bottom:40px;border-bottom:1px solid var(--line)}.footer-brand{display:flex;align-items:center;gap:15px}.footer-brand img{width:48px}.footer-brand span{font-size:10px;letter-spacing:.2em}.footer-bottom{display:flex;justify-content:space-between;color:#777970;font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding-top:25px}
+/* cta footer */.final-cta{min-height:470px;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;background:linear-gradient(rgba(10,11,10,.66),rgba(10,11,10,.78)),url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=85") center/cover}.final-cta .cta-pattern{position:absolute;left:0;top:0;width:100%;height:100%;background-image:url('https://cdn.jsdelivr.net/gh/idesign-drive/arjuna-assets@main/00-LOGO/arjuna-pattern.svg');background-repeat:no-repeat;background-position:left center;background-size:auto 100%;opacity:.15;pointer-events:none}.final-cta h2{font-size:clamp(48px,7vw,92px);line-height:.95;margin:18px auto 30px;max-width:850px}.final-cta h2 .cta-regular{font-style:normal;color:var(--ivory)}.final-cta h2 em{font-style:italic}.footer{padding:55px 0 120px;background:#0c0d0c}.footer-top{display:flex;justify-content:space-between;align-items:center;padding-bottom:40px;border-bottom:1px solid var(--line)}.footer-brand{display:flex;align-items:center;gap:15px}.footer-brand img{width:48px}.footer-brand span{font-size:10px;letter-spacing:.2em}.footer-bottom{display:flex;justify-content:space-between;color:#777970;font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding-top:25px}
 /* floating booking */.booking-bar{position:fixed;z-index:45;bottom:20px;left:50%;transform:translateX(-50%);transition:transform .72s cubic-bezier(.34,1.28,.64,1),opacity .28s ease;will-change:transform;width:min(1220px,calc(100% - 36px));padding:13px 15px 13px 22px;background:rgba(23,25,23,.76);border:1px solid rgba(240,238,232,.23);backdrop-filter:blur(26px) saturate(130%);-webkit-backdrop-filter:blur(26px) saturate(130%);box-shadow:0 18px 55px rgba(0,0,0,.28);display:grid;grid-template-columns:.82fr 1fr 1fr 1fr 1.55fr auto;gap:12px;align-items:center}.booking-title{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:#d4d1c8}.booking-field{border-left:1px solid var(--line);padding-left:15px;display:grid;grid-template-rows:12px 22px;gap:6px;align-content:center;min-width:0}.booking-field label{font-size:8px;color:#a7a69f;letter-spacing:.16em;text-transform:uppercase}.booking-field input{background:transparent;border:0;color:var(--ivory);font:300 11px "DM Sans";width:100%;height:22px;min-width:0;outline:none;color-scheme:dark}.booking-field input::placeholder{color:#c4c1b8}.booking-field input[type=text]{color-scheme:normal}.booking-field textarea{background:transparent;border:0;color:var(--ivory);font:300 11px/22px "DM Sans";width:100%;height:22px;min-height:22px;max-height:22px;resize:none;outline:none;white-space:nowrap;overflow:hidden}.booking-field textarea::placeholder{color:#c4c1b8}.booking-send{background:var(--lime);color:#121511;border:0;padding:17px 22px;font-size:9px;letter-spacing:.15em;text-transform:uppercase;cursor:pointer;transition:.35s var(--ease);white-space:nowrap}.booking-send:hover{background:#b1df70;transform:translateY(-2px)}.booking-bar.is-hidden{transform:translate(-50%,calc(100% + 48px));opacity:.98;pointer-events:none}.booking-hide{position:absolute;left:50%;top:-32px;transform:translateX(-50%);width:140px;height:32px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(240,238,232,.25);border-bottom:0;border-radius:5px 5px 0 0;background:rgba(23,25,23,.88);color:var(--ivory);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);font:500 9px "DM Sans";letter-spacing:.16em;text-transform:uppercase;cursor:pointer;white-space:nowrap;box-shadow:0 -7px 20px rgba(0,0,0,.12);transition:color .2s ease,background .2s ease}.booking-hide:hover{background:var(--lime);color:#121511;border-color:var(--lime)}.booking-note{display:none}.mobile-booking{display:none}
-/* modal */.modal{position:fixed;inset:0;background:rgba(6,7,6,.92);backdrop-filter:blur(18px);z-index:80;display:none;align-items:center;justify-content:center;padding:4vw}.modal.open{display:flex;animation:fadeIn .3s}.modal-panel{width:min(1120px,100%);max-height:90vh;display:grid;grid-template-columns:1.15fr .85fr;background:#1d201d;position:relative;overflow:auto}.modal-image{min-height:600px;position:relative}.modal-image img{position:absolute;inset:0}.modal-info{padding:60px 48px;display:flex;flex-direction:column;justify-content:center}.modal-info h3{font:400 clamp(34px,4vw,55px)/1 "Playfair Display";margin:18px 0}.modal-info p{font-size:12px;line-height:1.9;color:var(--muted)}.modal-meta{display:flex;gap:25px;margin:20px 0 35px}.modal-meta span{font-size:9px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase}.modal-meta strong{display:block;color:var(--ivory);font-size:14px;font-weight:400;margin-top:8px}.modal-close{position:absolute;top:18px;right:18px;width:42px;height:42px;border:1px solid rgba(255,255,255,.5);border-radius:50%;background:rgba(15,16,15,.6);z-index:2;cursor:pointer;font-size:18px;transition:.3s}.modal-close:hover{background:var(--ivory);color:var(--ink);transform:rotate(90deg)}.modal-nav{display:flex;gap:10px;margin-top:25px}.modal-nav button{border:1px solid var(--line);background:transparent;padding:12px 18px;font-size:9px;letter-spacing:.15em;text-transform:uppercase;cursor:pointer;transition:.3s}.modal-nav button:hover{background:var(--ivory);color:var(--ink)}.modal-counter{font-size:9px;letter-spacing:.18em;color:var(--muted);margin-top:20px}
+/* modal */.modal{position:fixed;inset:0;background:rgba(6,7,6,.92);backdrop-filter:blur(18px);z-index:80;display:none;align-items:center;justify-content:center;padding:4vw}.modal.open{display:flex;animation:fadeIn .3s}.modal-panel{width:min(1120px,100%);max-height:90vh;display:grid;grid-template-columns:1.15fr .85fr;background:#1d201d;position:relative;overflow:auto}.modal-image{min-height:600px;position:relative}.modal-image img{position:absolute;inset:0}.modal-info{padding:60px 48px;display:flex;flex-direction:column;justify-content:center}.modal-info h3{font:400 clamp(34px,4vw,55px)/1 "Alata";margin:18px 0}.modal-info p{font-size:12px;line-height:1.9;color:var(--muted)}.modal-meta{display:flex;gap:25px;margin:20px 0 35px}.modal-meta span{font-size:9px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase}.modal-meta strong{display:block;color:var(--ivory);font-size:14px;font-weight:400;margin-top:8px}.modal-close{position:absolute;top:18px;right:18px;width:42px;height:42px;border:1px solid rgba(255,255,255,.5);border-radius:50%;background:rgba(15,16,15,.6);z-index:2;cursor:pointer;font-size:18px;transition:.3s}.modal-close:hover{background:var(--ivory);color:var(--ink);transform:rotate(90deg)}.modal-nav{display:flex;gap:10px;margin-top:25px}.modal-nav button{border:1px solid var(--line);background:transparent;padding:12px 18px;font-size:9px;letter-spacing:.15em;text-transform:uppercase;cursor:pointer;transition:.3s}.modal-nav button:hover{background:var(--ivory);color:var(--ink)}.modal-counter{font-size:9px;letter-spacing:.18em;color:var(--muted);margin-top:20px}
+.modal-meta:has(.modal-facilities-heading){display:block;margin:20px 0 30px}.modal-facilities-heading span{font-size:9px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase}.modal-facilities{list-style:none;padding:0;margin:12px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:12px 20px}.modal-facilities li{font-size:11px;line-height:1.6;color:var(--ivory);padding-left:14px;position:relative}.modal-facilities li:before{content:"•";position:absolute;left:0;color:var(--lime)}
+
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}.reveal.visible{opacity:1;transform:none}
-@media(max-width:850px){.nav{justify-content:flex-start}.navlinks{display:none}.navlinks.mobile-open{display:flex;position:absolute;top:100%;left:20px;right:20px;flex-direction:column;align-items:stretch;gap:0;padding:10px 20px;background:rgba(17,18,17,.97);border:1px solid var(--line);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);box-shadow:0 18px 40px rgba(0,0,0,.28)}.navlinks.mobile-open a{padding:15px 0;border-bottom:1px solid rgba(240,238,232,.1);font-size:10px}.navlinks.mobile-open a:last-child{border-bottom:0}.nav-cta{margin-left:auto;margin-right:10px;white-space:nowrap}.menu-toggle{display:block;flex:0 0 auto;padding:6px 0 6px 4px;line-height:1}.hero{padding:0 7vw 16vh;min-height:650px}.hero-bottom{align-items:start;flex-direction:column}.hero-actions{margin-top:10px}.scroll-cue{display:none}.intro-grid,.architecture-grid,.room-feature,.dining-layout,.contact-grid{grid-template-columns:1fr}.intro-copy{margin:0;transform:none}.architecture-main{height:480px}.architecture-side{grid-template-columns:1fr 1fr;grid-template-rows:250px}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:240px 190px 190px}.gallery-item:nth-child(1){grid-row:span 2}.gallery-item:nth-child(4){grid-column:1/3}.room-feature{min-height:unset}.room-image{height:440px}.dining-photo{height:430px}.section{padding:100px 0}.section-head{align-items:start;flex-direction:column}.booking-bar{grid-template-columns:1fr 1fr;gap:10px;padding:14px}.booking-title{grid-column:1/3}.booking-field{border-left:0;padding:0}.booking-field.notes-field{grid-column:1/3}.booking-field textarea{min-height:42px}.booking-send{grid-column:1/3}.booking-note{display:block;grid-column:1/3;font-size:8px;color:var(--muted);text-align:center}.modal-panel{grid-template-columns:1fr;max-height:92vh}.modal-image{min-height:380px}.modal-info{padding:35px 28px}.map,.map iframe{min-height:380px}}
+@media(max-width:850px){.nav{justify-content:flex-start}.navlinks{display:none}.navlinks.mobile-open{display:flex;position:absolute;top:100%;left:20px;right:20px;flex-direction:column;align-items:stretch;gap:0;padding:10px 20px;background:rgba(17,18,17,.97);border:1px solid var(--line);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);box-shadow:0 18px 40px rgba(0,0,0,.28)}.navlinks.mobile-open a{padding:15px 0;border-bottom:1px solid rgba(240,238,232,.1);font-size:10px}.navlinks.mobile-open a:last-child{border-bottom:0}.nav-cta{margin-left:auto;margin-right:10px;white-space:nowrap}.menu-toggle{display:block;flex:0 0 auto;padding:6px 0 6px 4px;line-height:1}.hero{padding:0 7vw 16vh;min-height:650px}.hero-bottom{align-items:start;flex-direction:column}.hero-actions{margin-top:10px}.scroll-cue{display:none}.intro-grid,.architecture-grid,.room-feature,.dining-layout,.contact-grid{grid-template-columns:1fr}.intro-copy{margin:0;transform:none}.architecture-main{height:480px}.architecture-side{grid-template-columns:1fr 1fr;grid-template-rows:250px}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:240px 190px 190px}.gallery-item:nth-child(1){grid-row:span 2}.gallery-item:nth-child(4){grid-column:1/3}.room-feature{height:auto;min-height:unset}.room-image{height:440px}.dining-photo{height:430px}.section{padding:100px 0}.section-head{align-items:start;flex-direction:column}.booking-bar{grid-template-columns:1fr 1fr;gap:10px;padding:14px}.booking-title{grid-column:1/3}.booking-field{border-left:0;padding:0}.booking-field.notes-field{grid-column:1/3}.booking-field textarea{min-height:42px}.booking-send{grid-column:1/3}.booking-note{display:block;grid-column:1/3;font-size:8px;color:var(--muted);text-align:center}.modal-panel{grid-template-columns:1fr;max-height:92vh}.modal-image{min-height:380px}.modal-info{padding:35px 28px}.modal-facilities{grid-template-columns:1fr}.map,.map iframe{min-height:380px}}
 @media(max-width:560px){.wrap{width:calc(100% - 40px)}.hero h1{font-size:clamp(44px,12.8vw,70px);margin-bottom:42px}.hero{min-height:690px;padding-bottom:17vh}.hero-index{display:none}.nav{padding:18px 20px}.nav-cta{padding:11px 13px;font-size:8px}.brand img{width:31px;height:31px}.brand span{font-size:8px}.architecture-main{height:380px}.architecture-side{grid-template-columns:1fr;grid-template-rows:230px 230px}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:190px 155px 155px;gap:8px}.room-image{height:320px}.room-info{padding:32px 24px}.room-meta{gap:18px}.dining-photo{height:340px}.social-heading{align-items:start;flex-direction:column;gap:20px}.social-card{width:205px;height:250px}.contact-grid{gap:35px}.footer-top,.footer-bottom{gap:20px;align-items:start;flex-direction:column}.booking-bar{bottom:9px;width:calc(100% - 18px)}.booking-bar.is-hidden{transform:translate(-50%,calc(100% + 42px))}.booking-hide{width:140px;height:32px}.booking-field input,.booking-field textarea{font-size:10px}.booking-send{padding:14px}.section{padding:85px 0}.intro{padding:95px 0 120px}}
 
 .brand{gap:10px}.brand .brand-icon{width:34px;height:34px;object-fit:contain}.brand .brand-wordmark{width:112px;height:auto;max-height:34px;object-fit:contain;filter:invert(1)}.footer-brand{gap:12px}.footer-brand .footer-icon{width:42px;height:42px;object-fit:contain}.footer-brand .footer-wordmark{width:138px;height:auto;filter:invert(1)}
@@ -34,16 +40,445 @@
 .intro-grid{grid-template-columns:1fr 1fr;gap:9%;align-items:center}.intro-image{height:340px;margin-top:36px;overflow:hidden;width:min(760px,58vw);max-width:none;position:relative}.intro-image img{filter:saturate(.72);transition:transform 1s var(--ease)}.intro-image:hover img{transform:scale(1.04)}
 .architecture-collage{display:grid;grid-template-columns:1.1fr .8fr 1fr;grid-template-rows:250px 240px 210px;gap:14px}.collage-item{margin:0;position:relative;overflow:hidden;cursor:pointer;background:#292b28}.collage-item img{transition:transform 1s var(--ease),filter .5s;filter:saturate(.74)}.collage-item:hover img{transform:scale(1.055);filter:brightness(.83) saturate(.9)}.collage-item:after{content:"↗";position:absolute;right:18px;bottom:16px;font-size:20px;opacity:0;transform:translate(-5px,5px);transition:.35s}.collage-item:hover:after{opacity:1;transform:none}.collage-a{grid-row:span 2}.collage-b{grid-column:2;grid-row:1}.collage-c{grid-column:3;grid-row:1/3}.collage-d{grid-column:2;grid-row:2}.collage-e{grid-column:1/3;grid-row:3}.collage-f{grid-column:3;grid-row:3}
 .dining-photo{position:relative}.dining-slide-count{position:absolute;right:22px;bottom:20px;color:#fff;font-size:10px;letter-spacing:.2em;text-shadow:0 2px 12px #000;pointer-events:none}.map-label{display:flex;align-items:center;gap:10px}.map-pin{color:var(--lime);width:19px;height:22px;flex:0 0 auto;display:block}.map-label a{margin-left:auto;padding:10px 13px;background:var(--lime);color:#111;font-size:9px;letter-spacing:.13em;transition:.3s}.map-label a:hover{background:#b1df70}.final-cta .outline-btn:hover{background:var(--lime)!important;color:#111!important;border-color:var(--lime)!important}
-.modal-gallery-caption{position:absolute;left:0;right:0;bottom:0;padding:24px 28px;background:linear-gradient(transparent,rgba(0,0,0,.78));color:#fff;z-index:1}.modal-gallery-caption strong{display:block;font:400 22px "Playfair Display";margin-bottom:6px}.modal-gallery-caption span{font-size:10px;color:#ddd;letter-spacing:.04em}
+.modal-gallery-caption{position:absolute;left:0;right:0;bottom:0;padding:24px 28px;background:linear-gradient(transparent,rgba(0,0,0,.78));color:#fff;z-index:1}.modal-gallery-caption strong{display:block;font:400 22px "Alata";margin-bottom:6px}.modal-gallery-caption span{font-size:10px;color:#ddd;letter-spacing:.04em}
 @media(max-width:850px){.architecture-collage{grid-template-rows:220px 200px 180px}.intro-grid{grid-template-columns:1fr;gap:30px}.intro-image{height:280px;width:min(100%,760px)}.intro-mark{width:100%;opacity:.045}.brand .brand-wordmark{width:98px}.footer-brand .footer-wordmark{width:120px}}
 @media(max-width:560px){.architecture-collage{grid-template-columns:1fr 1fr;grid-template-rows:210px 160px 160px 150px;gap:8px}.collage-a{grid-column:1;grid-row:span 2}.collage-b{grid-column:2;grid-row:1}.collage-c{grid-column:2;grid-row:2}.collage-d{grid-column:1/3;grid-row:3}.collage-e{grid-column:1;grid-row:4}.collage-f{grid-column:2;grid-row:4}.stars{font-size:36px}.map-label{left:10px;right:10px;bottom:10px;font-size:8px}.map-label a{padding:9px}.brand .brand-icon{width:29px;height:29px}.brand .brand-wordmark{width:88px}}
 
+
+/* ARCHITECTURE + CTA — reference-led revision */
+.architecture{
+  background-color:#713a34;
+  background-image:
+    linear-gradient(rgba(111,49,43,.88),rgba(111,49,43,.88)),
+    url("https://cdn.jsdelivr.net/gh/idesign-drive/arjuna-assets@main/OTHER/tiles.webp");
+  background-repeat:repeat;
+  background-size:auto, 420px auto;
+  background-position:center;
+  color:var(--ivory);
+}
+.architecture .section-head{
+  align-items:start;
+  margin-bottom:34px;
+}
+.architecture .section-head h2{
+  font-size:clamp(38px,5vw,66px);
+  line-height:.98;
+  margin-top:14px;
+}
+.architecture .section-head p{
+  position:relative;
+  max-width:300px;
+  padding-top:58px;
+  margin:0 0 4px;
+  color:rgba(240,238,232,.72);
+  font-size:11px;
+  line-height:1.75;
+}
+.architecture .section-head p:before,
+.architecture .section-head p:after{
+  content:"";
+  position:absolute;
+  top:0;
+  background:#e8e7df;
+  border:2px solid #171917;
+  box-sizing:border-box;
+}
+.architecture .section-head p:before{
+  width:17px;height:17px;right:65px;
+}
+.architecture .section-head p:after{
+  width:25px;height:25px;right:0;
+}
+.architecture .architecture-collage{
+  grid-template-columns:1.1fr .8fr 1fr;
+  grid-template-rows:250px 240px 150px;
+  gap:7px;
+}
+.architecture .collage-item{
+  background:#33221f;
+  outline:1px solid rgba(20,15,14,.75);
+  outline-offset:-1px;
+}
+.architecture .collage-item img{
+  filter:none;
+}
+.architecture .collage-item:hover img{
+  filter:brightness(.94);
+}
+.architecture .collage-item:after{
+  color:#fff;
+  text-shadow:0 1px 8px rgba(0,0,0,.55);
+}
+.architecture .image-caption{
+  left:12px;bottom:10px;font-size:8px;
+}
+.architecture .arch-note{
+  margin-top:18px;
+  color:rgba(240,238,232,.6);
+  font-size:8px;
+  letter-spacing:.14em;
+}
+.architecture .arch-note span:first-child{
+  display:flex;align-items:center;gap:12px;
+}
+.architecture .arch-note span:first-child:before{
+  content:"";
+  display:inline-block;
+  width:15px;height:15px;
+  flex:0 0 15px;
+  background:#e8e7df;
+  border:2px solid #171917;
+  box-sizing:border-box;
+}
+.final-cta{
+  min-height:430px;
+  background:
+    linear-gradient(rgba(76,37,33,.72),rgba(76,37,33,.72)),
+    url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=85") center 52%/cover;
+}
+.final-cta .cta-pattern{display:none}
+.final-cta .wrap{position:relative;z-index:1}
+.final-cta .eyebrow{color:rgba(240,238,232,.68)}
+.final-cta h2{
+  max-width:650px;
+  font-size:clamp(43px,6.3vw,82px);
+  line-height:.91;
+  margin:18px auto 22px;
+  letter-spacing:-.055em;
+}
+.final-cta h2 em{display:inline;color:var(--lime)}
+.final-cta .outline-btn{
+  padding:10px 15px;
+  font-size:8px;
+  letter-spacing:.16em;
+  border-color:rgba(240,238,232,.58);
+}
+@media(max-width:850px){
+  .architecture .section-head{gap:24px}
+  .architecture .section-head p{max-width:260px;padding-top:48px}
+  .architecture .architecture-collage{grid-template-rows:220px 200px 145px}
+  .final-cta{min-height:390px}
+}
+@media(max-width:560px){
+  .architecture .section-head{gap:24px}
+  .architecture .section-head p{max-width:100%;padding-top:0;margin-top:8px}
+  .architecture .section-head p:before,
+  .architecture .section-head p:after{display:none}
+  .architecture .architecture-collage{
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:210px 160px 160px 125px;
+    gap:7px;
+  }
+  .architecture .collage-a{grid-column:1;grid-row:span 2}
+  .architecture .collage-b{grid-column:2;grid-row:1}
+  .architecture .collage-c{grid-column:2;grid-row:2}
+  .architecture .collage-d{grid-column:1/3;grid-row:3}
+  .architecture .collage-e{grid-column:1;grid-row:4}
+  .architecture .collage-f{grid-column:2;grid-row:4}
+  .architecture .arch-note{margin-top:14px}
+  .final-cta{min-height:360px;padding:55px 0}
+  .final-cta h2{font-size:clamp(40px,11vw,58px)}
+}
+
+
+/* Precision refinement — stronger brick texture, reference-sized markers, darker CTA */
+.architecture{
+  background-image:
+    linear-gradient(rgba(111,49,43,.66),rgba(111,49,43,.66)),
+    url("https://cdn.jsdelivr.net/gh/idesign-drive/arjuna-assets@main/OTHER/tiles.webp");
+  background-size:auto, 1260px auto;
+  background-position:center top;
+}
+.architecture .section-head p{
+  max-width:300px;
+  padding-top:155px;
+  color:rgba(248,239,230,.82);
+  text-shadow:0 1px 5px rgba(30,12,10,.38);
+}
+.architecture .section-head p:before{
+  width:58px;
+  height:58px;
+  right:240px;
+  top:0;
+  border-width:3px;
+}
+.architecture .section-head p:after{
+  width:88px;
+  height:88px;
+  right:0;
+  top:0;
+  border-width:3px;
+}
+.final-cta{
+  background:
+    linear-gradient(rgba(48,22,20,.86),rgba(48,22,20,.86)),
+    url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=85") center 52%/cover;
+}
+@media(max-width:850px){
+  .architecture .section-head p{
+    padding-top:125px;
+    max-width:260px;
+  }
+  .architecture .section-head p:before{
+    width:48px;height:48px;right:205px;
+  }
+  .architecture .section-head p:after{
+    width:72px;height:72px;
+  }
+}
+@media(max-width:560px){
+  .architecture .section-head p{
+    padding-top:0;
+  }
+}
+
+
+/* Requested typography, copy widths, controls and footer refinements */
+:root{--display-font:"Alata",sans-serif}
+.serif,
+.modal-info h3{font-family:"Alata",sans-serif!important;font-weight:400}
+.architecture{
+  background:#783E38!important;
+  background-image:none!important;
+}
+.architecture .section-head{align-items:end}
+.architecture .section-head p{
+  max-width:410px;
+  padding:0;
+  margin:0 0 5px;
+  color:rgba(240,238,232,.82);
+  font-size:14px;
+  line-height:2;
+  text-shadow:none;
+}
+.architecture .section-head p:before,
+.architecture .section-head p:after{display:none!important}
+.rooms .section-head p{
+  max-width:410px;
+  font-size:14px;
+  line-height:2;
+}
+.dining-copy p{
+  max-width:410px;
+  font-size:14px;
+  line-height:2;
+}
+.room-enquire{appearance:none}
+.room-enquire:hover,
+.dining-copy .outline-btn:hover,
+.modal-nav button:hover,
+.modal-close:hover,
+.round-btn:hover{
+  background:var(--lime)!important;
+  color:#111!important;
+  border-color:var(--lime)!important;
+}
+.modal-nav button,
+.modal-close,
+.round-btn{transition:background .35s var(--ease),color .35s var(--ease),border-color .35s var(--ease),transform .35s var(--ease)}
+.modal-close:hover{transform:rotate(90deg)}
+.contact-text-link{
+  display:inline-block;
+  color:var(--ivory);
+  font-size:14px;
+  font-weight:400;
+  line-height:1.5;
+  transition:color .3s var(--ease);
+}
+.contact-text-link:hover{color:var(--lime)}
+.group-link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid rgba(240,238,232,.38);
+  padding:10px 14px;
+  color:#bdbbb3;
+  font-size:9px;
+  line-height:1;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  transition:background .3s var(--ease),color .3s var(--ease),border-color .3s var(--ease);
+}
+.group-link:hover{
+  background:var(--lime);
+  color:#111;
+  border-color:var(--lime);
+}
+.footer{padding:32px 0 42px}
+.footer-top{padding-bottom:25px}
+.footer-bottom{padding-top:18px}
+@media(max-width:560px){
+  .architecture .section-head{align-items:start}
+  .architecture .section-head p,
+  .rooms .section-head p{max-width:100%}
+  .dining-copy p{max-width:100%}
+  .group-link{padding:9px 12px}
+}
+
+
+/* v4 refinements */
+.section h2 em,
+.section-head h2 em,
+.section h2 i,
+.section-head h2 i{font-style:normal!important}
+.architecture .arch-note span:first-child:before{display:none!important}
+.social-heading h2{white-space:nowrap}
+.social-heading h2 .brand-accent{color:var(--lime)!important}
+.group-link{
+  border:0!important;padding:0!important;background:transparent!important;
+  color:#bdbbb3;font-size:9px;letter-spacing:.14em;text-transform:uppercase;
+  transition:color .3s var(--ease)
+}
+.group-link:hover{color:var(--lime)!important;background:transparent!important}
+@media(max-width:560px){.social-heading h2{white-space:normal}}
+
+/* v5 title refinements */
+:root{--section-title-size:clamp(42px,6vw,82px)}
+.hero h1,.hero h1 em,.hero h1 i{font-style:normal!important}
+.intro h2,.section-head h2,.dining-copy h2,.testimonials h2,.social-heading h2,.contact-copy h2,.final-cta h2{font-size:var(--section-title-size)!important}
+.intro h2 em,.section-head h2 em,.dining-copy h2 em,.testimonials h2 em,.social-heading h2 em,.contact-copy h2 em,.final-cta h2 em,.intro h2 i,.section-head h2 i,.dining-copy h2 i,.testimonials h2 i,.social-heading h2 i,.contact-copy h2 i,.final-cta h2 i{font-style:normal!important}
+.quote{font-family:"DM Sans",sans-serif!important;font-weight:300!important}
+
+
+
+/* CTA: brick multiply overlay applied over the full background image */
+.final-cta{
+  position:relative;
+  isolation:isolate;
+  background-image:url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=85");
+  background-position:center 52%;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+.final-cta::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+  background:#783E38;
+  mix-blend-mode:multiply;
+  opacity:1;
+  pointer-events:none;
+}
+.final-cta .wrap{position:relative;z-index:1}
+
+
+
+
 </style>
+<style id="room-brick-tone-and-modal-follow-active-room">
+/* Replace the green room tone with the established Arjuna brick tone. */
+.rooms .room-selector.room-tone-superior{--room-panel:#6f312b;--room-text:#f0eee8;--room-muted:rgba(240,238,232,.82)}
+.rooms .room-chip[data-room="1"],
+.rooms .room-chip[data-room="1"]:hover,
+.rooms .room-chip[data-room="1"]:active,
+.rooms .room-chip[data-room="1"]:focus,
+.rooms .room-chip[data-room="1"]:focus-visible{background:#6f312b!important;color:#f0eee8!important}
+.rooms .room-chip.active[data-room="1"]{background:var(--room-panel)!important;color:var(--room-text)!important}
+
+/* Room popup information panel inherits the selected room card palette. */
+.modal-panel.room-modal-tone-deluxe{--modal-room-bg:#171917;--modal-room-text:#f0eee8;--modal-room-muted:rgba(240,238,232,.78)}
+.modal-panel.room-modal-tone-superior{--modal-room-bg:#6f312b;--modal-room-text:#f0eee8;--modal-room-muted:rgba(240,238,232,.84)}
+.modal-panel.room-modal-tone-family{--modal-room-bg:#e9e6de;--modal-room-text:#171917;--modal-room-muted:rgba(23,25,23,.78)}
+.modal-panel.room-modal-tone-deluxe .modal-info,
+.modal-panel.room-modal-tone-superior .modal-info,
+.modal-panel.room-modal-tone-family .modal-info{background:var(--modal-room-bg);color:var(--modal-room-text)}
+.modal-panel.room-modal-tone-deluxe .modal-info h3,
+.modal-panel.room-modal-tone-superior .modal-info h3,
+.modal-panel.room-modal-tone-family .modal-info h3,
+.modal-panel.room-modal-tone-deluxe .modal-info .modal-facilities-heading span,
+.modal-panel.room-modal-tone-superior .modal-info .modal-facilities-heading span,
+.modal-panel.room-modal-tone-family .modal-info .modal-facilities-heading span{color:var(--modal-room-text)}
+.modal-panel.room-modal-tone-deluxe .modal-info p,
+.modal-panel.room-modal-tone-superior .modal-info p,
+.modal-panel.room-modal-tone-family .modal-info p,
+.modal-panel.room-modal-tone-deluxe .modal-counter,
+.modal-panel.room-modal-tone-superior .modal-counter,
+.modal-panel.room-modal-tone-family .modal-counter{color:var(--modal-room-muted)}
+.modal-panel.room-modal-tone-deluxe .modal-facilities li,
+.modal-panel.room-modal-tone-superior .modal-facilities li,
+.modal-panel.room-modal-tone-family .modal-facilities li{color:var(--modal-room-text)}
+.modal-panel.room-modal-tone-deluxe .modal-facilities li:before,
+.modal-panel.room-modal-tone-superior .modal-facilities li:before{color:#d9a096}
+.modal-panel.room-modal-tone-family .modal-facilities li:before{color:#6f312b}
+.modal-panel.room-modal-tone-deluxe .modal-meta span,
+.modal-panel.room-modal-tone-superior .modal-meta span,
+.modal-panel.room-modal-tone-family .modal-meta span{color:var(--modal-room-muted)}
+.modal-panel.room-modal-tone-deluxe .modal-meta strong,
+.modal-panel.room-modal-tone-superior .modal-meta strong,
+.modal-panel.room-modal-tone-family .modal-meta strong{color:var(--modal-room-text)}
+.modal-panel.room-modal-tone-deluxe .modal-nav button,
+.modal-panel.room-modal-tone-superior .modal-nav button,
+.modal-panel.room-modal-tone-family .modal-nav button{border-color:color-mix(in srgb,var(--modal-room-text) 45%,transparent);color:var(--modal-room-text)}
+.modal-panel.room-modal-tone-deluxe .modal-nav button:hover,
+.modal-panel.room-modal-tone-superior .modal-nav button:hover,
+.modal-panel.room-modal-tone-family .modal-nav button:hover{background:var(--modal-room-text);color:var(--modal-room-bg)}
+.modal-panel.room-modal-tone-family .modal-info .modal-close{color:#171917;border-color:rgba(23,25,23,.5)}
+
+
+/* CTA: brick multiply overlay applied over the full background image */
+.final-cta{
+  position:relative;
+  isolation:isolate;
+  background-image:url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=85");
+  background-position:center 52%;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+.final-cta::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+  background:#783E38;
+  mix-blend-mode:multiply;
+  opacity:1;
+  pointer-events:none;
+}
+.final-cta .wrap{position:relative;z-index:1}
+
+</style>
+
+<style id="contact-map-full-area-link">
+/* Make the complete map surface one accessible link to the hotel's Google Maps place. */
+.contact .map-link{display:block;color:inherit;text-decoration:none;cursor:pointer}
+.contact .map-link iframe{pointer-events:none}
+.contact .map-link .map-label{z-index:4;pointer-events:none}
+.contact .map-link .map-label span{display:inline-block;margin-left:12px;color:var(--lime)}
+.contact .map-link:focus-visible{outline:2px solid var(--lime);outline-offset:4px}
+
+
+/* CTA: brick multiply overlay applied over the full background image */
+.final-cta{
+  position:relative;
+  isolation:isolate;
+  background-image:url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=85");
+  background-position:center 52%;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+.final-cta::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+  background:#783E38;
+  mix-blend-mode:multiply;
+  opacity:1;
+  pointer-events:none;
+}
+.final-cta .wrap{position:relative;z-index:1}
+
+</style>
+
+
+
+
 </head>
 <body>
 <div class="grain"></div>
 <header class="nav" id="nav">
-  <a class="brand" href="#top"><img class="brand-icon" src="00-LOGO/arjuna-icon.svg" alt=""><img class="brand-wordmark" src="00-LOGO/arjuna-text.svg" alt="Hotel Arjuna"></a>
+  <a class="brand" href="#top"><img class="brand-icon" src="https://cdn.jsdelivr.net/gh/idesign-drive/arjuna-assets@main/00-LOGO/arjuna-icon.svg" alt=""><img class="brand-wordmark" src="https://cdn.jsdelivr.net/gh/idesign-drive/arjuna-assets@main/00-LOGO/arjuna-text.svg" alt="Hotel Arjuna"></a>
   <nav class="navlinks" id="mobileNavigation"><a href="#intro">Overview</a><a href="#architecture">Architecture</a><a href="#rooms">Rooms</a><a href="#dining">Dining</a><a href="#testimonials">Guest notes</a><a href="#social">Instagram</a><a href="#contact">Contact</a></nav>
   <a class="nav-cta" href="#booking">Book your stay <span>↗</span></a>
   <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-controls="mobileNavigation" aria-expanded="false">☰</button>
@@ -51,7 +486,7 @@
 
 <main id="top">
 <section class="hero">
-  <div class="hero-media hero-slideshow"><img class="hero-slide active" src="01-HERO/hero-01-exterior.webp" alt="Hotel architecture"><img class="hero-slide" src="01-HERO/hero-02-architecture.webp" alt="Architectural detail"><img class="hero-slide" src="01-HERO/hero-03-interior.webp" alt="Hotel interior"><img class="hero-slide" src="01-HERO/hero-04-lounge.webp" alt="Living space"></div>
+  <div class="hero-media hero-slideshow"><img class="hero-slide active" src="https://cdn.jsdelivr.net/gh/idesign-drive/arjuna-assets@main/01-HERO/hero-01-exterior.webp" alt="Hotel architecture"><img class="hero-slide" src="https://cdn.jsdelivr.net/gh/idesign-drive/arjuna-assets@main/01-HERO/hero-02-architecture.webp" alt="Architectural detail"><img class="hero-slide" src="https://cdn.jsdelivr.net/gh/idesign-drive/arjuna-assets@main/01-HERO/hero-03-interior.webp" alt="Hotel interior"><img class="hero-slide" src="https://cdn.jsdelivr.net/gh/idesign-drive/arjuna-assets@main/01-HERO/hero-04-lounge.webp" alt="Living space"></div>
   <div class="hero-content">
     <div class="hero-kicker">A considered stay in the heart of Batu</div>
     <h1 class="serif">A different<br><em class="brand-accent">perspective</em><br>of staying.</h1>
@@ -68,7 +503,9 @@
  <div class="intro-mark" aria-hidden="true"></div>
 </section>
 
-<section class="section architecture" id="architecture"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow">02 — Architecture & visual journal</div><h2 class="serif">Form. Texture.<br><em class="brand-accent">Atmosphere</em>.</h2></div><p>A visual study of Hotel Arjuna: its architecture, interiors, spaces, and defining details. Select any image to see it in a larger view.</p></div><div class="architecture-collage reveal">
+<div class="intro-architecture-pattern" aria-hidden="true"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxOTE5Ljk5IDEyMCI+CiAgPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI5LjguMiwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDIuMS4xIEJ1aWxkIDMpICAtLT4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLnN0MCB7CiAgICAgICAgZmlsbDogI2U5ZTVkZTsKICAgICAgfQoKICAgICAgLnN0MSB7CiAgICAgICAgZmlsbDogI2Q1ZDJjYjsKICAgICAgfQoKICAgICAgLnN0MiB7CiAgICAgICAgZmlsbDogIzc4M2UzOTsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPGc+CiAgICA8cG9seWdvbiBjbGFzcz0ic3QyIiBwb2ludHM9IjE5MTkuOTkgMTIwIDE5MTkuOTkgMCAxODU5Ljk5IDU5Ljk5IDE5MTkuOTkgMTIwIi8+CiAgICA8cG9seWdvbiBjbGFzcz0ic3QxIiBwb2ludHM9IjE4MDAgMCAxODAwIDEyMCAxODU5Ljk5IDU5Ljk5IDE4MDAgMCIvPgogICAgPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxOTE5Ljk5IDAgMTgwMCAwIDE4NTkuOTkgNTkuOTkgMTkxOS45OSAwIi8+CiAgPC9nPgogIDxnPgogICAgPHBvbHlnb24gY2xhc3M9InN0MiIgcG9pbnRzPSIxNDQwIDAgMTQ0MCAxMjAgMTUwMCA2MC4wMSAxNDQwIDAiLz4KICAgIDxwb2x5Z29uIGNsYXNzPSJzdDEiIHBvaW50cz0iMTU2MCAxMjAgMTU2MCAwIDE1MDAgNjAuMDEgMTU2MCAxMjAiLz4KICAgIDxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTQ0MCAxMjAgMTU2MCAxMjAgMTUwMCA2MC4wMSAxNDQwIDEyMCIvPgogIDwvZz4KICA8Zz4KICAgIDxwb2x5Z29uIGNsYXNzPSJzdDIiIHBvaW50cz0iMTY4MCAxMjAgMTgwMCAxMjAgMTc0MCA1OS45OSAxNjgwIDEyMCIvPgogICAgPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxODAwIDAgMTY4MCAwIDE3NDAgNTkuOTkgMTgwMCAwIi8+CiAgICA8cG9seWdvbiBjbGFzcz0ic3QwIiBwb2ludHM9IjE4MDAgMTIwIDE4MDAgMCAxNzQwIDU5Ljk5IDE4MDAgMTIwIi8+CiAgPC9nPgogIDxnPgogICAgPHBvbHlnb24gY2xhc3M9InN0MiIgcG9pbnRzPSIxNjgwIDAgMTU2MCAwIDE2MTkuOTkgNjAuMDEgMTY4MCAwIi8+CiAgICA8cG9seWdvbiBjbGFzcz0ic3QxIiBwb2ludHM9IjE1NjAgMTIwIDE2ODAgMTIwIDE2MTkuOTkgNjAuMDEgMTU2MCAxMjAiLz4KICAgIDxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTU2MCAwIDE1NjAgMTIwIDE2MTkuOTkgNjAuMDEgMTU2MCAwIi8+CiAgPC9nPgogIDxnPgogICAgPHBvbHlnb24gY2xhc3M9InN0MiIgcG9pbnRzPSIxMzIwIDEyMCAxNDQwIDEyMCAxMzgwIDU5Ljk5IDEzMjAgMTIwIi8+CiAgICA8cG9seWdvbiBjbGFzcz0ic3QxIiBwb2ludHM9IjE0NDAgMCAxMzIwIDAgMTM4MCA1OS45OSAxNDQwIDAiLz4KICAgIDxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTQ0MCAxMjAgMTQ0MCAwIDEzODAgNTkuOTkgMTQ0MCAxMjAiLz4KICA8L2c+CiAgPGc+CiAgICA8cG9seWdvbiBjbGFzcz0ic3QyIiBwb2ludHM9Ijk2MCAxMjAgMTA4MCAxMjAgMTAyMC4wMSA1OS45OSA5NjAgMTIwIi8+CiAgICA8cG9seWdvbiBjbGFzcz0ic3QxIiBwb2ludHM9IjEwODAgMCA5NjAgMCAxMDIwLjAxIDU5Ljk5IDEwODAgMCIvPgogICAgPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxMDgwIDEyMCAxMDgwIDAgMTAyMC4wMSA1OS45OSAxMDgwIDEyMCIvPgogIDwvZz4KICA8Zz4KICAgIDxwb2x5Z29uIGNsYXNzPSJzdDIiIHBvaW50cz0iMTMyMCAwIDEyMDAgMCAxMjU5Ljk5IDYwLjAxIDEzMjAgMCIvPgogICAgPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjAwIDEyMCAxMzIwIDEyMCAxMjU5Ljk5IDYwLjAxIDEyMDAgMTIwIi8+CiAgICA8cG9seWdvbiBjbGFzcz0ic3QwIiBwb2ludHM9IjEyMDAgMCAxMjAwIDEyMCAxMjU5Ljk5IDYwLjAxIDEyMDAgMCIvPgogIDwvZz4KICA8Zz4KICAgIDxwb2x5Z29uIGNsYXNzPSJzdDIiIHBvaW50cz0iMTA4MCAwIDEwODAgMTIwIDExNDAuMDEgNjAuMDEgMTA4MCAwIi8+CiAgICA8cG9seWdvbiBjbGFzcz0ic3QxIiBwb2ludHM9IjEyMDAgMTIwIDEyMDAgMCAxMTQwLjAxIDYwLjAxIDEyMDAgMTIwIi8+CiAgICA8cG9seWdvbiBjbGFzcz0ic3QwIiBwb2ludHM9IjEwODAgMTIwIDEyMDAgMTIwIDExNDAuMDEgNjAuMDEgMTA4MCAxMjAiLz4KICA8L2c+CiAgPGc+CiAgICA8cG9seWdvbiBjbGFzcz0ic3QyIiBwb2ludHM9Ijk2MCAxMjAgOTYwIDAgODk5Ljk5IDU5Ljk5IDk2MCAxMjAiLz4KICAgIDxwb2x5Z29uIGNsYXNzPSJzdDEiIHBvaW50cz0iODQwIDAgODQwIDEyMCA4OTkuOTkgNTkuOTkgODQwIDAiLz4KICAgIDxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iOTYwIDAgODQwIDAgODk5Ljk5IDU5Ljk5IDk2MCAwIi8+CiAgPC9nPgogIDxnPgogICAgPHBvbHlnb24gY2xhc3M9InN0MiIgcG9pbnRzPSI0ODAgMCA0ODAgMTIwIDU0MC4wMSA2MC4wMSA0ODAgMCIvPgogICAgPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSI2MDAgMTIwIDYwMCAwIDU0MC4wMSA2MC4wMSA2MDAgMTIwIi8+CiAgICA8cG9seWdvbiBjbGFzcz0ic3QwIiBwb2ludHM9IjQ4MCAxMjAgNjAwIDEyMCA1NDAuMDEgNjAuMDEgNDgwIDEyMCIvPgogIDwvZz4KICA8Zz4KICAgIDxwb2x5Z29uIGNsYXNzPSJzdDIiIHBvaW50cz0iNzIwIDEyMCA4NDAgMTIwIDc4MC4wMSA1OS45OSA3MjAgMTIwIi8+CiAgICA8cG9seWdvbiBjbGFzcz0ic3QxIiBwb2ludHM9Ijg0MCAwIDcyMCAwIDc4MC4wMSA1OS45OSA4NDAgMCIvPgogICAgPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSI4NDAgMTIwIDg0MCAwIDc4MC4wMSA1OS45OSA4NDAgMTIwIi8+CiAgPC9nPgogIDxnPgogICAgPHBvbHlnb24gY2xhc3M9InN0MiIgcG9pbnRzPSI3MjAgMCA2MDAgMCA2NTkuOTkgNjAuMDEgNzIwIDAiLz4KICAgIDxwb2x5Z29uIGNsYXNzPSJzdDEiIHBvaW50cz0iNjAwIDEyMCA3MjAgMTIwIDY1OS45OSA2MC4wMSA2MDAgMTIwIi8+CiAgICA8cG9seWdvbiBjbGFzcz0ic3QwIiBwb2ludHM9IjYwMCAwIDYwMCAxMjAgNjU5Ljk5IDYwLjAxIDYwMCAwIi8+CiAgPC9nPgogIDxnPgogICAgPHBvbHlnb24gY2xhc3M9InN0MiIgcG9pbnRzPSIzNjAgMTIwIDQ4MCAxMjAgNDIwLjAxIDU5Ljk5IDM2MCAxMjAiLz4KICAgIDxwb2x5Z29uIGNsYXNzPSJzdDEiIHBvaW50cz0iNDgwIDAgMzYwIDAgNDIwLjAxIDU5Ljk5IDQ4MCAwIi8+CiAgICA8cG9seWdvbiBjbGFzcz0ic3QwIiBwb2ludHM9IjQ4MCAxMjAgNDgwIDAgNDIwLjAxIDU5Ljk5IDQ4MCAxMjAiLz4KICA8L2c+CiAgPGc+CiAgICA8cG9seWdvbiBjbGFzcz0ic3QyIiBwb2ludHM9IjAgMTIwIDEyMCAxMjAgNjAuMDEgNTkuOTkgMCAxMjAiLz4KICAgIDxwb2x5Z29uIGNsYXNzPSJzdDEiIHBvaW50cz0iMTIwIDAgMCAwIDYwLjAxIDU5Ljk5IDEyMCAwIi8+CiAgPC9nPgogIDxnPgogICAgPHBvbHlnb24gY2xhc3M9InN0MiIgcG9pbnRzPSIzNjAgMCAyNDAgMCAyOTkuOTkgNjAuMDEgMzYwIDAiLz4KICAgIDxwb2x5Z29uIGNsYXNzPSJzdDEiIHBvaW50cz0iMjQwIDEyMCAzNjAgMTIwIDI5OS45OSA2MC4wMSAyNDAgMTIwIi8+CiAgICA8cG9seWdvbiBjbGFzcz0ic3QwIiBwb2ludHM9IjI0MCAwIDI0MCAxMjAgMjk5Ljk5IDYwLjAxIDI0MCAwIi8+CiAgPC9nPgogIDxnPgogICAgPHBvbHlnb24gY2xhc3M9InN0MiIgcG9pbnRzPSIxMjAgMCAxMjAgMTIwIDE4MC4wMSA2MC4wMSAxMjAgMCIvPgogICAgPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIyNDAgMTIwIDI0MCAwIDE4MC4wMSA2MC4wMSAyNDAgMTIwIi8+CiAgICA8cG9seWdvbiBjbGFzcz0ic3QwIiBwb2ludHM9IjEyMCAxMjAgMjQwIDEyMCAxODAuMDEgNjAuMDEgMTIwIDEyMCIvPgogIDwvZz4KPC9zdmc+" alt=""></div>
+
+<section class="section architecture" id="architecture"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow">02 — Architecture & visual journal</div><h2 class="serif">Form. Texture.<br><em class="brand-accent">Atmosphere</em>.</h2></div><p>Explore the architectural character of Hotel Arjuna through its considered spaces, interior details, and distinctive design elements. Select any image to take a closer look.</p></div><div class="architecture-collage reveal">
 <figure class="collage-item collage-a" data-modal="gallery" data-index="0"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=85" alt="Architecture"><figcaption class="image-caption">01 / Architecture</figcaption></figure>
 <figure class="collage-item collage-b" data-modal="gallery" data-index="1"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1000&q=85" alt="Interior"><figcaption class="image-caption">02 / Interior</figcaption></figure>
 <figure class="collage-item collage-c" data-modal="gallery" data-index="2"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85" alt="Facade"><figcaption class="image-caption">03 / Facade</figcaption></figure>
@@ -78,24 +515,27 @@
 
 <section class="section rooms" id="rooms">
  <div class="wrap">
-  <div class="section-head reveal"><div><div class="eyebrow">04 — Stay your way</div><h2 class="serif">Find your space.</h2></div><p>Thoughtfully arranged rooms designed to make every stay feel effortless.</p></div>
-  <div class="room-feature reveal">
-   <div class="room-image" data-modal="room" data-index="0"><img id="roomFeatureImg" src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1400&q=85" alt="Room concept"><span class="image-caption">Explore room details ↗</span></div>
-   <div class="room-info"><div class="eyebrow" id="roomEyebrow">Room collection / 01</div><h3 class="serif" id="roomTitle">Deluxe Room</h3><p id="roomDescription">A calm and comfortable retreat with considered details, warm textures, and everything you need to settle in.</p><div class="room-meta"><div><strong id="roomSize">— m²</strong><span>Room size</span></div><div><strong id="roomGuests">— guests</strong><span>Occupancy</span></div><div><strong id="roomBed">—</strong><span>Bed type</span></div></div><a class="outline-btn" href="#booking">Enquire about this room ↗</a><div class="room-choices"><button class="room-chip active" data-room="0">Deluxe</button><button class="room-chip" data-room="1">Superior</button><button class="room-chip" data-room="2">Family</button></div></div>
+  <div class="section-head reveal"><div><div class="eyebrow">04 — Stay your way</div><h2 class="serif">Find your <em class="brand-accent">space</em>.</h2></div><p>Thoughtfully arranged rooms designed to make every stay feel effortless, with inviting details and comfortable spaces to return to after a day in Batu.</p></div>
+  <div class="room-selector reveal room-tone-deluxe" id="roomSelector">
+   <div class="room-feature">
+    <div class="room-image" data-modal="room" data-index="0"><img id="roomFeatureImg" src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1400&q=85" alt="Deluxe room"><span class="image-caption">Explore room details ↗</span></div>
+    <div class="room-info"><div class="eyebrow" id="roomEyebrow">Room collection / 01</div><h3 class="serif" id="roomTitle">Deluxe Room</h3><p id="roomDescription">A calm and comfortable retreat with considered details, warm textures, and everything you need to settle in.</p><div class="room-facilities-title">Facilities</div><ul class="room-facilities" id="roomFacilities"><li>Dummy facility one</li><li>Dummy facility two</li><li>Dummy facility three</li><li>Dummy facility four</li><li>Dummy facility five</li><li>Dummy facility six</li></ul><button class="outline-btn room-enquire" type="button" data-modal="room" data-index="0">Explore room ↗</button></div>
+   </div>
+   <div class="room-choices" aria-label="Choose room type"><button class="room-chip active" data-room="0" aria-pressed="true">Deluxe</button><button class="room-chip" data-room="1" aria-pressed="false">Superior</button><button class="room-chip" data-room="2" aria-pressed="false">Family</button></div>
   </div>
  </div>
 </section>
 
 <section class="section dining" id="dining">
  <div class="wrap dining-layout reveal">
-  <div class="dining-copy"><div class="eyebrow">05 — A moment to savour</div><h2 class="serif">Gather.<br>Unwind.<br><em class="brand-accent">Enjoy.</em></h2><p>Make time for good coffee, thoughtful conversations, and easy moments at Tekopi Coffee Shop.</p><a class="outline-btn" style="border-color:#8e8c83;color:#171917" href="https://www.instagram.com/arjuna_kotabatu/?hl=en" target="_blank">Discover dining ↗</a></div>
-  <div class="dining-photo" id="diningCarousel" data-modal="dining" data-index="0"><img class="dining-current" id="diningSlide" src="05-DINING/dining-01-coffee-shop.webp" alt="Dining atmosphere"><img class="dining-next" id="diningSlideNext" src="05-DINING/dining-01-coffee-shop.webp" alt="" aria-hidden="true"><span class="dining-slide-count" id="diningSlideCount">01 / 04</span></div>
+  <div class="dining-copy"><div class="eyebrow">05 — A moment to savour</div><h2 class="serif">Gather.<br>Unwind.<br><em class="brand-accent">Enjoy</em><span class="dining-title-period">.</span></h2><p>Make time for good coffee, thoughtful conversations, and easy moments at Tekopi Coffee Shop, a relaxed place to pause, gather, and enjoy the flavours of Batu.</p><a class="outline-btn" style="border-color:#8e8c83;color:#171917" href="https://www.instagram.com/arjuna_kotabatu/?hl=en" target="_blank">Discover dining ↗</a></div>
+  <div class="dining-photo" id="diningCarousel" data-modal="dining" data-index="0"><img class="dining-current" id="diningSlide" src="https://cdn.jsdelivr.net/gh/idesign-drive/arjuna-assets@main/05-DINING/dining-01-coffee-shop.webp" alt="Dining atmosphere"><img class="dining-next" id="diningSlideNext" src="https://cdn.jsdelivr.net/gh/idesign-drive/arjuna-assets@main/05-DINING/dining-01-coffee-shop.webp" alt="" aria-hidden="true"><span class="dining-slide-count" id="diningSlideCount">01 / 04</span></div>
  </div>
 </section>
 
 <section class="section testimonials" id="testimonials">
  <div class="wrap testimonial-shell reveal">
-  <div class="eyebrow">06 — Guest notes</div><h2 class="serif" style="font-size:clamp(42px,6vw,78px);margin:17px 0 0">The stay, remembered.</h2>
+  <div class="eyebrow">06 — Guest notes</div><h2 class="serif" style="font-size:clamp(42px,6vw,78px);margin:17px 0 0">The stay, <em class="brand-accent">remembered</em>.</h2>
   <div class="stars">★★★★★</div><div class="quote" id="quote">“A comfortable stay with a distinctive atmosphere. The location made it easy to explore Batu, and the team made us feel welcome.”</div><div class="guest" id="guest">Guest review · 01</div>
   <div class="test-controls"><button class="round-btn" id="prevTest" aria-label="Previous testimonial">←</button><span class="test-count" id="testCount">01 — 08</span><button class="round-btn" id="nextTest" aria-label="Next testimonial">→</button></div>
  </div>
@@ -103,16 +543,16 @@
 
 <section class="section social" id="social">
  <div class="wrap">
-  <div class="social-heading reveal"><div><div class="eyebrow">07 — Follow the moments</div><h2 class="serif">A little more<br>of Arjuna.</h2></div><a href="https://www.instagram.com/arjuna_kotabatu/?hl=en" target="_blank">@arjuna_kotabatu ↗</a></div>
+  <div class="social-heading reveal"><div><div class="eyebrow">07 — Follow the moments</div><h2 class="serif">A little more of <em class="brand-accent">Arjuna</em><span class="social-title-period">.</span></h2></div><a href="https://www.instagram.com/arjuna_kotabatu/?hl=en" target="_blank">@arjuna_kotabatu ↗</a></div>
  </div>
  <div class="social-track-wrap">
   <div class="social-track" id="socialTrack">
-   <div class="social-card"><a href="https://www.instagram.com/arjuna_kotabatu/?hl=en" target="_blank" rel="noopener noreferrer"><img src="01-HERO/hero-01-exterior.webp" alt="Hotel Arjuna exterior" loading="eager" decoding="async"></a></div>
-   <div class="social-card"><a href="https://www.instagram.com/arjuna_kotabatu/?hl=en" target="_blank" rel="noopener noreferrer"><img src="01-HERO/hero-02-architecture.webp" alt="Hotel Arjuna architecture" loading="eager" decoding="async"></a></div>
-   <div class="social-card"><a href="https://www.instagram.com/arjuna_kotabatu/?hl=en" target="_blank" rel="noopener noreferrer"><img src="01-HERO/hero-03-interior.webp" alt="Hotel Arjuna interior" loading="eager" decoding="async"></a></div>
-   <div class="social-card"><a href="https://www.instagram.com/arjuna_kotabatu/?hl=en" target="_blank" rel="noopener noreferrer"><img src="01-HERO/hero-04-lounge.webp" alt="Hotel Arjuna lounge" loading="eager" decoding="async"></a></div>
-   <div class="social-card"><a href="https://www.instagram.com/arjuna_kotabatu/?hl=en" target="_blank" rel="noopener noreferrer"><img src="05-DINING/dining-01-coffee-shop.webp" alt="Tekopi Coffee Shop" loading="eager" decoding="async"></a></div>
-   <div class="social-card"><a href="https://www.instagram.com/arjuna_kotabatu/?hl=en" target="_blank" rel="noopener noreferrer"><img src="05-DINING/dining-02-dining-area.webp" alt="Tekopi dining area" loading="eager" decoding="async"></a></div>
+   <div class="social-card"><a href="https://www.instagram.com/arjuna_kotabatu/?hl=en" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/idesign-drive/arjuna-assets@main/01-HERO/hero-01-exterior.webp" alt="Hotel Arjuna exterior" loading="eager" decoding="async"></a></div>
+   <div class="social-card"><a href="https://www.instagram.com/arjuna_kotabatu/?hl=en" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/idesign-drive/arjuna-assets@main/01-HERO/hero-02-architecture.webp" alt="Hotel Arjuna architecture" loading="eager" decoding="async"></a></div>
+   <div class="social-card"><a href="https://www.instagram.com/arjuna_kotabatu/?hl=en" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/idesign-drive/arjuna-assets@main/01-HERO/hero-03-interior.webp" alt="Hotel Arjuna interior" loading="eager" decoding="async"></a></div>
+   <div class="social-card"><a href="https://www.instagram.com/arjuna_kotabatu/?hl=en" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/idesign-drive/arjuna-assets@main/01-HERO/hero-04-lounge.webp" alt="Hotel Arjuna lounge" loading="eager" decoding="async"></a></div>
+   <div class="social-card"><a href="https://www.instagram.com/arjuna_kotabatu/?hl=en" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/idesign-drive/arjuna-assets@main/05-DINING/dining-01-coffee-shop.webp" alt="Tekopi Coffee Shop" loading="eager" decoding="async"></a></div>
+   <div class="social-card"><a href="https://www.instagram.com/arjuna_kotabatu/?hl=en" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/idesign-drive/arjuna-assets@main/05-DINING/dining-02-dining-area.webp" alt="Tekopi dining area" loading="eager" decoding="async"></a></div>
   </div>
  </div>
  <div class="wrap"><div class="social-note">Hover to pause · Select an image to visit Instagram</div></div>
@@ -120,17 +560,17 @@
 
 <section class="section contact" id="contact">
  <div class="wrap contact-grid">
-  <div class="contact-copy reveal"><div class="eyebrow">08 — Find your way</div><h2 class="serif">Meet us<br>in Batu.</h2><p>We look forward to welcoming you. Reach out to our team for reservations and enquiries.</p><div class="contact-details"><div><span>Address</span><strong>Jl. Panglima Sudirman No. 37, Batu, East Java</strong></div><div><span>Instagram</span><strong>@arjuna_kotabatu</strong></div><div><span>Reservations</span><strong>Connect with our team via WhatsApp</strong></div></div></div>
-  <div class="map reveal"><iframe loading="lazy" src="https://www.google.com/maps?q=Hotel+Arjuna+Batu&output=embed" title="Hotel Arjuna map"></iframe><div class="map-marker-overlay" aria-hidden="true"><svg viewBox="0 0 24 30"><path d="M12 29s9-8.1 9-17A9 9 0 1 0 3 12c0 8.9 9 17 9 17Z" fill="currentColor"/><circle cx="12" cy="12" r="3.3" fill="#171917"/></svg></div><div class="map-label"><svg class="map-pin" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.1 7-13a7 7 0 1 0-14 0c0 6.9 7 13 7 13Z" fill="currentColor"/><circle cx="12" cy="9" r="2.5" fill="#171917"/></svg> Hotel Arjuna · Kota Batu <a href="https://www.google.com/maps/place/Hotel+Arjuna/@-7.869495,112.5186624,17z/data=!3m1!4b1!4m9!3m8!1s0x2e788734598878b3:0xb465842d7597d30b!5m2!4m1!1i2!8m2!3d-7.869495!4d112.5212373!16s%2Fg%2F11bc966fzx?shorturl=1" target="_blank">Open in Maps ↗</a></div></div>
+  <div class="contact-copy reveal"><div class="eyebrow">08 — Find your way</div><h2 class="serif"><em class="brand-accent">Meet us</em><br>in Batu.</h2><p>We look forward to welcoming you. Reach out to our team for<br>reservations and enquiries.</p><div class="contact-details"><div><span>Address</span><strong>Jl. Panglima Sudirman No. 37, Batu, East Java</strong></div><div><span>Instagram</span><a class="contact-text-link" href="https://www.instagram.com/arjuna_kotabatu/" target="_blank" rel="noopener noreferrer">@arjuna_kotabatu ↗</a></div><div><span>Reservations</span><a class="contact-text-link" href="https://wa.me/62816511818" target="_blank" rel="noopener noreferrer">Connect with out team ↗</a></div></div></div>
+  <a class="map map-link reveal" href="https://www.google.com/maps/place/Hotel+Arjuna/@-7.869495,112.5186624,17z/data=!3m1!4b1!4m9!3m8!1s0x2e788734598878b3:0xb465842d7597d30b!5m2!4m1!1i2!8m2!3d-7.869495!4d112.5212373!16s%2Fg%2F11bc966fzx?shorturl=1" target="_blank" rel="noopener noreferrer" aria-label="Open Hotel Arjuna Kota Batu in Google Maps"><iframe loading="lazy" src="https://www.google.com/maps?q=Hotel+Arjuna+Batu&output=embed" title="Hotel Arjuna map" tabindex="-1" aria-hidden="true"></iframe><div class="map-marker-overlay" aria-hidden="true"><svg viewBox="0 0 24 30"><path d="M12 29s9-8.1 9-17A9 9 0 1 0 3 12c0 8.9 9 17 9 17Z" fill="currentColor"/><circle cx="12" cy="12" r="3.3" fill="#171917"/></svg></div><div class="map-label" aria-hidden="true"><svg class="map-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.1 7-13a7 7 0 1 0-14 0c0 6.9 7 13 7 13Z" fill="currentColor"/><circle cx="12" cy="9" r="2.5" fill="#171917"/></svg> Hotel Arjuna · Kota Batu <span>Open in Maps ↗</span></div></a>
  </div>
 </section>
 
 <section class="final-cta">
- <div class="cta-pattern" aria-hidden="true"></div><div class="wrap reveal"><div class="eyebrow">Your next chapter in Batu</div><h2 class="serif">Make room for<br><span class="cta-regular">a </span><em class="brand-accent">different experience</em><span class="cta-regular">.</span></h2><a class="outline-btn" href="#booking">Reserve your stay ↗</a></div>
+ <div class="cta-pattern" aria-hidden="true"></div><div class="wrap reveal"><div class="eyebrow">Your next chapter in Batu</div><h2 class="serif">Make room for<br><span class="cta-regular">a </span><em class="brand-accent">different</em><br><em class="brand-accent">experience</em><span class="cta-regular">.</span></h2><a class="outline-btn" href="#booking">Reserve your stay ↗</a></div>
 </section>
 </main>
 
-<footer class="footer"><div class="wrap"><div class="footer-top"><a class="footer-brand" href="#top"><img class="footer-icon" src="00-LOGO/arjuna-icon.svg" alt=""><img class="footer-wordmark" src="00-LOGO/arjuna-text.svg" alt="Hotel Arjuna"></a><div class="eyebrow">A different perspective of staying.</div></div><div class="footer-bottom"><span>© 2026 Hotel Arjuna. All rights reserved.</span><span>Made for moments in Batu, Indonesia.</span></div></div></footer>
+<footer class="footer"><div class="wrap"><div class="footer-top"><a class="footer-brand" href="#top"><img class="footer-icon" src="https://cdn.jsdelivr.net/gh/idesign-drive/arjuna-assets@main/00-LOGO/arjuna-icon.svg" alt=""><img class="footer-wordmark" src="https://cdn.jsdelivr.net/gh/idesign-drive/arjuna-assets@main/00-LOGO/arjuna-text.svg" alt="Hotel Arjuna"></a><div class="eyebrow">A different perspective of staying.</div></div><div class="footer-bottom"><span>© 2026 Hotel Arjuna. All rights reserved.</span><a class="group-link" href="https://suryahotelsgroup.com/" target="_blank" rel="noopener noreferrer">Part of Surya Collection Group ↗</a></div></div></footer>
 
 <div class="booking-bar is-hidden" id="booking" aria-hidden="true">
  <div class="booking-title">Plan your stay <span style="color:var(--lime)">·</span></div><button class="booking-hide" id="hideBooking" type="button" aria-label="Hide booking bar">HIDE BOOKING ↓</button>
@@ -192,21 +632,40 @@ const gallery=[
 const rooms=[
  {name:'Deluxe Room',size:'— m²',guests:'— guests',bed:'To be confirmed',desc:'A calm and comfortable retreat with considered details, warm textures, and everything you need to settle in.',imgs:['https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1800&q=90','https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1800&q=90','https://images.unsplash.com/photo-1629079447777-1e605162dc8d?auto=format&fit=crop&w=1800&q=90']},
  {name:'Superior Room',size:'— m²',guests:'— guests',bed:'To be confirmed',desc:'A thoughtfully arranged room with a welcoming atmosphere for a restful stay in Batu.',imgs:['https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1800&q=90','https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1800&q=90','https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1800&q=90']},
- {name:'Family Room',size:'— m²',guests:'— guests',bed:'To be confirmed',desc:'A generous setting for shared moments, with the comfort and essentials for a family stay.',imgs:['https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1800&q=90','https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1800&q=90','https://images.unsplash.com/photo-1629079447777-1e605162dc8d?auto=format&fit=crop&w=1800&q=90']}
+ {name:'Family Room',size:'— m²',guests:'— guests',bed:'To be confirmed',desc:'A generous setting for shared moments, with the comfort and essentials for a family stay.',imgs:['https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1800&q=90','https://images.unsplash.com/photo-1564078516393-cf04bd966897?auto=format&fit=crop&w=1800&q=90','https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1800&q=90']}
 ];
 let activeRoom=0;
-function setRoom(i){activeRoom=i;let r=rooms[i];$('#roomTitle').textContent=r.name;$('#roomSize').textContent=r.size;$('#roomGuests').textContent=r.guests;$('#roomBed').textContent=r.bed;$('#roomDescription').textContent=r.desc;$('#roomEyebrow').textContent=`Room collection / 0${i+1}`;$('#roomFeatureImg').src=r.imgs[0];$$('.room-chip').forEach((b,j)=>b.classList.toggle('active',j===i));}
+const roomFacilities=[
+ ['Dummy facility one','Dummy facility two','Dummy facility three','Dummy facility four','Dummy facility five','Dummy facility six'],
+ ['Dummy facility one','Dummy facility two','Dummy facility three','Dummy facility four','Dummy facility five','Dummy facility six'],
+ ['Dummy facility one','Dummy facility two','Dummy facility three','Dummy facility four','Dummy facility five','Dummy facility six']
+];
+function setRoom(i){
+ activeRoom=i;
+ const r=rooms[i],selector=$('#roomSelector');
+ $('#roomTitle').textContent=r.name;
+ $('#roomDescription').textContent=r.desc;
+ $('#roomEyebrow').textContent=`Room collection / 0${i+1}`;
+ $('#roomFeatureImg').src=r.imgs[0];
+ $('#roomFeatureImg').alt=`${r.name} interior`;
+ document.querySelector('.rooms').style.setProperty('--room-bg-image',`url(\"${r.imgs[0]}\")`);
+ $('#roomFacilities').innerHTML=roomFacilities[i].map(item=>`<li>${item}</li>`).join('');
+ selector.classList.remove('room-tone-deluxe','room-tone-superior','room-tone-family');
+ selector.classList.add(['room-tone-deluxe','room-tone-superior','room-tone-family'][i]);
+ $$('.room-chip').forEach((b,j)=>{b.classList.toggle('active',j===i);b.setAttribute('aria-pressed',j===i?'true':'false')});
+}
 $$('.room-chip').forEach(b=>b.addEventListener('click',()=>setRoom(+b.dataset.room)));
+setRoom(activeRoom);
 const dining=[
- ['05-DINING/dining-01-coffee-shop.webp','Tekopi Coffee Shop','A place for coffee, conversation, and relaxed moments.'],
- ['05-DINING/dining-02-dining-area.webp','Dining atmosphere','A welcoming setting for unhurried moments.'],
- ['05-DINING/dining-03-food-and-table.webp','A table to gather','Thoughtful food and time well spent.'],
- ['05-DINING/dining-04-coffee-moment.webp','Coffee moments','Take a pause and enjoy the little things.']
+ ['https://cdn.jsdelivr.net/gh/idesign-drive/arjuna-assets@main/05-DINING/dining-01-coffee-shop.webp','Tekopi Coffee Shop','A place for coffee, conversation, and relaxed moments.'],
+ ['https://cdn.jsdelivr.net/gh/idesign-drive/arjuna-assets@main/05-DINING/dining-02-dining-area.webp','Dining atmosphere','A welcoming setting for unhurried moments.'],
+ ['https://cdn.jsdelivr.net/gh/idesign-drive/arjuna-assets@main/05-DINING/dining-03-food-and-table.webp','A table to gather','Thoughtful food and time well spent.'],
+ ['https://cdn.jsdelivr.net/gh/idesign-drive/arjuna-assets@main/05-DINING/dining-04-coffee-moment.webp','Coffee moments','Take a pause and enjoy the little things.']
 ];
 let modalType='gallery',modalIndex=0;
 function dataFor(){if(modalType==='gallery')return gallery;if(modalType==='room')return rooms[activeRoom].imgs.map((src,i)=>[src,`${rooms[activeRoom].name} · ${['Bedroom','Interior detail','Bathroom'][i]}`,rooms[activeRoom].desc]);return dining}
 function openModal(type,index){modalType=type;modalIndex=index;renderModal();$('#modal').classList.add('open');$('#modal').setAttribute('aria-hidden','false');document.body.style.overflow='hidden'}
-function renderModal(){let d=dataFor(),item=d[modalIndex];$('#modalImg').src=item[0];$('#modalTitle').textContent=item[1];$('#modalDesc').textContent=item[2];$('#modalEyebrow').textContent=modalType==='room'?'Room collection':modalType==='dining'?'Dining experience':'Hotel Arjuna / Visual journal';$('#modalMeta').innerHTML=modalType==='room'?`<div><span>Room</span><strong>${rooms[activeRoom].name}</strong></div><div><span>View</span><strong>${modalIndex+1} of ${d.length}</strong></div>`:'';$('#modalCounter').textContent=`${String(modalIndex+1).padStart(2,'0')} / ${String(d.length).padStart(2,'0')}`;const gm=modalType==='gallery';$('#modalPanel').style.gridTemplateColumns=gm?'1fr':'1.15fr .85fr';$('#modalInfo').style.display=gm?'none':'flex';$('#modalGalleryCaption').style.display=gm?'block':'none';$('#modalCaptionTitle').textContent=item[1];$('#modalCaptionDesc').textContent=item[2];$('#modalTitle').style.display=gm?'none':'block';$('#modalDesc').style.display=gm?'none':'block';$('#modalEyebrow').style.display=gm?'none':'block';$('#modalMeta').style.display=gm?'none':'flex';$('#modalPrev').style.display=(modalType==='dining'||modalType==='room')?'inline-block':'none';$('#modalNext').style.display=(modalType==='dining'||modalType==='room')?'inline-block':'none';$('#modalCounter').style.display=(modalType==='dining'||modalType==='room')?'block':'none'}
+function renderModal(){let d=dataFor(),item=d[modalIndex];const panel=$('#modalPanel');panel.classList.remove('room-modal-tone-deluxe','room-modal-tone-superior','room-modal-tone-family');if(modalType==='room')panel.classList.add(['room-modal-tone-deluxe','room-modal-tone-superior','room-modal-tone-family'][activeRoom]);$('#modalImg').src=item[0];$('#modalTitle').textContent=item[1];$('#modalDesc').textContent=item[2];$('#modalEyebrow').textContent=modalType==='room'?'Room collection':modalType==='dining'?'Dining experience':'Hotel Arjuna / Visual journal';$('#modalMeta').innerHTML=modalType==='room'?`<div class="modal-facilities-heading"><span>Facilities</span></div><ul class="modal-facilities"><li>Dummy facility information one</li><li>Dummy facility information two</li><li>Dummy facility information three</li><li>Dummy facility information four</li><li>Dummy facility information five</li><li>Dummy facility information six</li></ul>`:'';$('#modalCounter').textContent=`${String(modalIndex+1).padStart(2,'0')} / ${String(d.length).padStart(2,'0')}`;const gm=modalType==='gallery';$('#modalPanel').style.gridTemplateColumns=gm?'1fr':'1.15fr .85fr';$('#modalInfo').style.display=gm?'none':'flex';$('#modalGalleryCaption').style.display=gm?'block':'none';$('#modalCaptionTitle').textContent=item[1];$('#modalCaptionDesc').textContent=item[2];$('#modalTitle').style.display=gm?'none':'block';$('#modalDesc').style.display=gm?'none':'block';$('#modalEyebrow').style.display=gm?'none':'block';$('#modalMeta').style.display=gm?'none':'flex';$('#modalPrev').style.display=(modalType==='dining'||modalType==='room')?'inline-block':'none';$('#modalNext').style.display=(modalType==='dining'||modalType==='room')?'inline-block':'none';$('#modalCounter').style.display=(modalType==='dining'||modalType==='room')?'block':'none'}
 function closeModal(){$('#modal').classList.remove('open');$('#modal').setAttribute('aria-hidden','true');document.body.style.overflow=''}
 function stepModal(dir){let d=dataFor();modalIndex=(modalIndex+dir+d.length)%d.length;renderModal()}
 $$('[data-modal]').forEach(el=>el.addEventListener('click',()=>openModal(el.dataset.modal,+el.dataset.index)));
@@ -249,6 +708,504 @@ setInterval(()=>{
 // Duplicate marquee items for a seamless infinite loop.
 const track=$('#socialTrack');track.innerHTML+=track.innerHTML;
 // Booking request - replace this placeholder with the hotel's verified WhatsApp number.
-$('#sendBooking').addEventListener('click',()=>{const name=$('#guestName').value.trim(),ci=$('#checkIn').value,co=$('#checkOut').value,notes=$('#bookingNotes').value.trim();if(!name||!ci||!co){alert('Please enter your name, check-in date, and check-out date.');return}if(new Date(co)<=new Date(ci)){alert('Check-out must be after check-in.');return}const message=`Hello Hotel Arjuna, I would like to enquire about a reservation.\\n\\nName: ${name}\\nCheck-in: ${ci}\\nCheck-out: ${co}\\nSpecial notes: ${notes || 'None'}\\n\\nPlease share room availability and rates. Thank you.`;const whatsapp='https://wa.me/62XXXXXXXXXX?text='+encodeURIComponent(message);window.open(whatsapp,'_blank')});
+$('#sendBooking').addEventListener('click',()=>{const name=$('#guestName').value.trim(),ci=$('#checkIn').value,co=$('#checkOut').value,notes=$('#bookingNotes').value.trim();if(!name||!ci||!co){alert('Please enter your name, check-in date, and check-out date.');return}if(new Date(co)<=new Date(ci)){alert('Check-out must be after check-in.');return}const message=`Hello Hotel Arjuna, I would like to enquire about a reservation.\\n\\nName: ${name}\\nCheck-in: ${ci}\\nCheck-out: ${co}\\nSpecial notes: ${notes || 'None'}\\n\\nPlease share room availability and rates. Thank you.`;const whatsapp='https://wa.me/62816511818?text='+encodeURIComponent(message);window.open(whatsapp,'_blank')});
 </script>
+<style id="requested-v7-adjustments">
+/* Room selector group and CTA share the same overall footprint */
+.room-choices{width:100%;display:flex;gap:0;margin-top:24px;height:49px}
+.room-chip{flex:1;min-width:0;height:100%;display:flex;align-items:center;justify-content:center;padding:10px 8px;border-color:rgba(240,238,232,.5);font-size:9px}
+.room-enquire{width:100%;height:49px;justify-content:center;margin-top:12px}
+.modal-facilities-heading span{display:block;margin-left:14px}
+.modal-facilities{margin-top:0}
+.dining-title-period,.social-title-period{color:#171917!important}
+@media(max-width:560px){.room-choices{height:46px}.room-enquire{height:46px}}
+
+
+/* CTA: brick multiply overlay applied over the full background image */
+.final-cta{
+  position:relative;
+  isolation:isolate;
+  background-image:url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=85");
+  background-position:center 52%;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+.final-cta::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+  background:#783E38;
+  mix-blend-mode:multiply;
+  opacity:1;
+  pointer-events:none;
+}
+.final-cta .wrap{position:relative;z-index:1}
+
+</style>
+
+<style id="room-selector-brand-layout">
+/* Room selector: one split feature panel with a full-width room-type strip */
+.rooms .room-selector{--room-panel:#171917;--room-text:#f0eee8;--room-muted:rgba(240,238,232,.78);background:var(--room-panel);color:var(--room-text);transition:background-color .45s ease,color .45s ease}
+.rooms .room-selector.room-tone-deluxe{--room-panel:#171917;--room-text:#f0eee8;--room-muted:rgba(240,238,232,.78)}
+.rooms .room-selector.room-tone-superior{--room-panel:#8dc63f;--room-text:#171917;--room-muted:rgba(23,25,23,.82)}
+.rooms .room-selector.room-tone-family{--room-panel:#e9e6de;--room-text:#171917;--room-muted:rgba(23,25,23,.76)}
+.rooms .room-feature{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(300px,1fr);gap:0;height:auto;min-height:500px;background:var(--room-panel);color:var(--room-text);transition:background-color .45s ease,color .45s ease}
+.rooms .room-image{margin:20px 0 20px 20px;min-height:460px;background:rgba(0,0,0,.12)}
+.rooms .room-image img{filter:none;transition:opacity .35s ease}
+.rooms .room-image:hover img{transform:none}
+.rooms .room-info{padding:clamp(28px,4vw,62px);display:flex;flex-direction:column;justify-content:center;align-items:flex-start;color:var(--room-text)}
+.rooms .room-info .eyebrow{color:var(--room-muted)}
+.rooms .room-info h3{font-size:clamp(30px,3.2vw,48px);line-height:1.05;margin:12px 0 22px;color:var(--room-text)}
+.rooms .room-info p{font-size:13px;line-height:1.65;color:var(--room-muted);max-width:390px;margin:0 0 22px}
+.rooms .room-facilities-title{font-size:12px;line-height:1.4;margin-bottom:5px;color:var(--room-text)}
+.rooms .room-facilities{list-style:disc;columns:2;column-gap:24px;padding-left:16px;margin:0 0 30px;width:100%;max-width:420px;color:var(--room-text);font-size:12px;line-height:1.65}
+.rooms .room-facilities li{break-inside:avoid;padding-right:4px}
+.rooms .room-enquire{width:auto;min-width:145px;height:46px;justify-content:center;margin:0;border-color:var(--room-text);color:var(--room-text);padding:13px 18px}
+.rooms .room-enquire:hover{background:var(--room-text)!important;color:var(--room-panel)!important;border-color:var(--room-text)!important}
+.rooms .room-choices{width:100%;height:72px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin:0;background:#171917}
+.rooms .room-chip{height:72px;display:flex;align-items:center;justify-content:center;margin:0;border:0;border-right:1px solid rgba(23,25,23,.12);padding:12px;font-size:clamp(14px,1.7vw,22px);letter-spacing:0;text-transform:lowercase;transition:filter .25s ease,box-shadow .25s ease;background:#171917;color:#f0eee8}
+.rooms .room-chip[data-room="1"]{background:#8dc63f;color:#171917}
+.rooms .room-chip[data-room="2"]{background:#e9e6de;color:#171917;border-right:0}
+.rooms .room-chip.active{box-shadow:inset 0 0 0 3px var(--lime);filter:brightness(.94)}
+.rooms .room-chip:hover{filter:brightness(.88)}
+@media(max-width:850px){.rooms .room-feature{grid-template-columns:minmax(0,1.15fr) minmax(260px,.85fr);min-height:420px}.rooms .room-image{min-height:380px;margin:16px 0 16px 16px}.rooms .room-info{padding:26px}.rooms .room-facilities{column-gap:14px;font-size:11px}}
+@media(max-width:650px){.rooms .room-feature{grid-template-columns:1fr;min-height:0}.rooms .room-image{height:320px;min-height:0;margin:14px 14px 0}.rooms .room-info{padding:28px 24px 30px}.rooms .room-info h3{font-size:36px}.rooms .room-facilities{max-width:100%;font-size:12px}.rooms .room-choices,.rooms .room-chip{height:58px}.rooms .room-chip{font-size:16px}}
+
+
+/* CTA: brick multiply overlay applied over the full background image */
+.final-cta{
+  position:relative;
+  isolation:isolate;
+  background-image:url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=85");
+  background-position:center 52%;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+.final-cta::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+  background:#783E38;
+  mix-blend-mode:multiply;
+  opacity:1;
+  pointer-events:none;
+}
+.final-cta .wrap{position:relative;z-index:1}
+
+</style>
+
+
+<style id="room-selector-v8-refinements">
+/* Consistent dimensions and tonal room states */
+.rooms .room-feature{
+  height:500px;
+  min-height:500px;
+}
+.rooms .room-image{height:460px;min-height:460px;}
+.rooms .room-info{min-width:0;}
+.rooms .room-selector.room-tone-deluxe{--room-panel:#171917;--room-text:#f0eee8;--room-muted:rgba(240,238,232,.78)}
+.rooms .room-selector.room-tone-superior{--room-panel:#121412;--room-text:#f0eee8;--room-muted:rgba(240,238,232,.78)}
+.rooms .room-selector.room-tone-family{--room-panel:#0e100e;--room-text:#f0eee8;--room-muted:rgba(240,238,232,.78)}
+.rooms .room-feature{background:var(--room-panel);color:var(--room-text);}
+.rooms .room-info,.rooms .room-info h3,.rooms .room-facilities-title,.rooms .room-facilities{color:var(--room-text)}
+.rooms .room-info p,.rooms .room-info .eyebrow{color:var(--room-muted)}
+.rooms .room-choices{height:72px;min-height:72px;}
+.rooms .room-chip,
+.rooms .room-chip[data-room="1"],
+.rooms .room-chip[data-room="2"]{
+  height:72px;min-height:72px;border:0!important;outline:0!important;box-shadow:none!important;
+  background:#171917;color:#f0eee8;
+  transition:background-color .55s cubic-bezier(.22,1,.36,1),color .4s ease,letter-spacing .85s cubic-bezier(.16,1,.3,1),filter .55s ease;
+  letter-spacing:0;
+}
+.rooms .room-chip[data-room="1"]{background:#121412;color:#f0eee8}
+.rooms .room-chip[data-room="2"]{background:#0e100e;color:#f0eee8}
+.rooms .room-chip.active{background:var(--room-panel)!important;color:var(--room-text)!important;filter:none!important;border:0!important;outline:0!important;box-shadow:none!important}
+.rooms .room-chip:hover{letter-spacing:.2em;filter:brightness(1.16)!important;}
+.rooms .room-chip.active:hover{filter:brightness(1.16)!important;}
+@media(max-width:850px){
+ .rooms .room-feature{height:420px;min-height:420px}
+ .rooms .room-image{height:388px;min-height:388px}
+}
+@media(max-width:650px){
+ .rooms .room-feature{height:auto;min-height:0}
+ .rooms .room-image{height:320px;min-height:320px}
+ .rooms .room-choices,.rooms .room-chip{height:58px;min-height:58px}
+}
+
+
+/* CTA: brick multiply overlay applied over the full background image */
+.final-cta{
+  position:relative;
+  isolation:isolate;
+  background-image:url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=85");
+  background-position:center 52%;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+.final-cta::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+  background:#783E38;
+  mix-blend-mode:multiply;
+  opacity:1;
+  pointer-events:none;
+}
+.final-cta .wrap{position:relative;z-index:1}
+
+</style>
+
+
+
+<style id="room-selector-background-and-tab-cleanup">
+/* Room selector backdrop follows the currently selected room image. */
+.rooms .room-selector{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  background:transparent!important;
+}
+.rooms .room-selector::before{
+  content:"";
+  position:absolute;
+  inset:-22px;
+  z-index:-2;
+  background-image:var(--room-bg-image);
+  background-size:cover;
+  background-position:center;
+  filter:blur(18px);
+  transform:scale(1.04);
+  transition:background-image .45s ease,filter .45s ease;
+  pointer-events:none;
+}
+.rooms .room-selector::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  background:rgba(0,0,0,.85);
+  pointer-events:none;
+}
+.rooms .room-feature,
+.rooms .room-choices{
+  background:transparent!important;
+}
+.rooms .room-chip,
+.rooms .room-chip[data-room="1"],
+.rooms .room-chip[data-room="2"]{
+  text-transform:uppercase!important;
+  transition:none!important;
+  animation:none!important;
+  letter-spacing:0!important;
+  filter:none!important;
+  box-shadow:none!important;
+  outline:0!important;
+  border:0!important;
+}
+.rooms .room-chip:hover,
+.rooms .room-chip:focus-visible,
+.rooms .room-chip.active:hover{
+  text-transform:uppercase!important;
+  letter-spacing:0!important;
+  filter:none!important;
+  transform:none!important;
+  box-shadow:none!important;
+  outline:0!important;
+  animation:none!important;
+  transition:none!important;
+}
+.rooms .room-chip[data-room="0"]{background:rgba(23,25,23,.94)!important;color:#f0eee8!important}
+.rooms .room-chip[data-room="1"]{background:rgba(18,20,18,.94)!important;color:#f0eee8!important}
+.rooms .room-chip[data-room="2"]{background:rgba(14,16,14,.94)!important;color:#f0eee8!important}
+.rooms .room-chip.active{background:var(--room-panel)!important;color:var(--room-text)!important}
+
+
+/* CTA: brick multiply overlay applied over the full background image */
+.final-cta{
+  position:relative;
+  isolation:isolate;
+  background-image:url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=85");
+  background-position:center 52%;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+.final-cta::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+  background:#783E38;
+  mix-blend-mode:multiply;
+  opacity:1;
+  pointer-events:none;
+}
+.final-cta .wrap{position:relative;z-index:1}
+
+</style>
+
+
+<style id="room-section-full-bleed-and-tonal-tabs">
+/* Full-bleed room photography covers the entire Room Type section. */
+.rooms{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  background:#111!important;
+}
+.rooms::before{
+  content:"";position:absolute;inset:0;z-index:-2;
+  background-image:var(--room-bg-image);background-size:cover;background-position:center;
+  filter:blur(20px);transform:scale(1.06);pointer-events:none;
+}
+.rooms::after{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:rgba(0,0,0,.85);pointer-events:none;
+}
+.rooms>.wrap{position:relative;z-index:1}
+.rooms .room-selector{background:transparent!important}
+.rooms .room-feature{background:var(--room-panel)!important;color:var(--room-text)!important}
+.rooms .room-selector.room-tone-deluxe{--room-panel:#171917;--room-text:#f0eee8;--room-muted:rgba(240,238,232,.78)}
+.rooms .room-selector.room-tone-superior{--room-panel:#121412;--room-text:#f0eee8;--room-muted:rgba(240,238,232,.78)}
+.rooms .room-selector.room-tone-family{--room-panel:#0e100e;--room-text:#f0eee8;--room-muted:rgba(240,238,232,.78)}
+.rooms .room-choices{background:transparent!important}
+.rooms .room-chip,
+.rooms .room-chip[data-room="0"],
+.rooms .room-chip[data-room="1"],
+.rooms .room-chip[data-room="2"]{
+  height:72px;min-height:72px;background:#171917!important;color:#f0eee8!important;
+  border:0!important;outline:0!important;box-shadow:none!important;
+  text-transform:uppercase!important;letter-spacing:0!important;
+  transition:none!important;animation:none!important;filter:none!important;transform:none!important;
+}
+.rooms .room-chip[data-room="1"]{background:#121412!important;color:#f0eee8!important}
+.rooms .room-chip[data-room="2"]{background:#0e100e!important;color:#f0eee8!important}
+.rooms .room-chip.active{background:var(--room-panel)!important;color:var(--room-text)!important}
+.rooms .room-chip:hover,.rooms .room-chip:focus-visible,.rooms .room-chip.active:hover{
+  background:inherit!important;filter:none!important;transform:none!important;
+  letter-spacing:0!important;outline:0!important;box-shadow:none!important;
+}
+@media(max-width:650px){.rooms .room-chip{height:58px;min-height:58px}}
+
+
+/* CTA: brick multiply overlay applied over the full background image */
+.final-cta{
+  position:relative;
+  isolation:isolate;
+  background-image:url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=85");
+  background-position:center 52%;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+.final-cta::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+  background:#783E38;
+  mix-blend-mode:multiply;
+  opacity:1;
+  pointer-events:none;
+}
+.final-cta .wrap{position:relative;z-index:1}
+
+</style>
+
+
+<style id="room-tab-hover-removal-and-family-image-fix">
+/* Room tabs: no hover animation, filter, outline, or active border. */
+.rooms .room-chip,
+.rooms .room-chip:hover,
+.rooms .room-chip:focus,
+.rooms .room-chip:focus-visible,
+.rooms .room-chip.active{
+  transition:none!important;
+  filter:none!important;
+  box-shadow:none!important;
+  outline:none!important;
+  border:0!important;
+}
+.rooms .room-chip:hover{
+  background-color:inherit!important;
+  color:inherit!important;
+}
+.rooms .room-chip[data-room="0"]{background:#171917!important;color:#f0eee8!important}
+.rooms .room-chip[data-room="1"]{background:#121412!important;color:#f0eee8!important}
+.rooms .room-chip[data-room="2"]{background:#0e100e!important;color:#f0eee8!important}
+
+
+/* CTA: brick multiply overlay applied over the full background image */
+.final-cta{
+  position:relative;
+  isolation:isolate;
+  background-image:url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=85");
+  background-position:center 52%;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+.final-cta::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+  background:#783E38;
+  mix-blend-mode:multiply;
+  opacity:1;
+  pointer-events:none;
+}
+.final-cta .wrap{position:relative;z-index:1}
+
+</style>
+
+<style id="room-tabs-final-adjustments">
+/* Exact requested tab behavior: no hover/focus styling on active or inactive tabs. */
+.rooms .room-chip,
+.rooms .room-chip:hover,
+.rooms .room-chip:active,
+.rooms .room-chip:focus,
+.rooms .room-chip:focus-visible,
+.rooms .room-chip.active,
+.rooms .room-chip.active:hover,
+.rooms .room-chip.active:focus,
+.rooms .room-chip.active:focus-visible {
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+  filter: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  border-color: transparent !important;
+  text-decoration: none !important;
+  letter-spacing: 0 !important;
+}
+/* Preserve each room's existing solid tab color in every pointer state. */
+.rooms .room-chip[data-room="0"],
+.rooms .room-chip[data-room="0"]:hover,
+.rooms .room-chip[data-room="0"]:active,
+.rooms .room-chip[data-room="0"]:focus,
+.rooms .room-chip[data-room="0"]:focus-visible { background: #171917 !important; color: #f0eee8 !important; }
+.rooms .room-chip[data-room="1"],
+.rooms .room-chip[data-room="1"]:hover,
+.rooms .room-chip[data-room="1"]:active,
+.rooms .room-chip[data-room="1"]:focus,
+.rooms .room-chip[data-room="1"]:focus-visible { background: #8dc63f !important; color: #171917 !important; }
+.rooms .room-chip[data-room="2"],
+.rooms .room-chip[data-room="2"]:hover,
+.rooms .room-chip[data-room="2"]:active,
+.rooms .room-chip[data-room="2"]:focus,
+.rooms .room-chip[data-room="2"]:focus-visible { background: #e9e6de !important; color: #171917 !important; }
+/* Tab labels reduced by exactly 20% from the previous desktop/mobile sizes. */
+.rooms .room-chip { font-size: clamp(11.2px, 1.36vw, 17.6px) !important; }
+@media (max-width: 650px) { .rooms .room-chip { font-size: 12.8px !important; } }
+/* Full-section blurred image overlay opacity: 50%. */
+.rooms::after { background: rgba(0,0,0,.5) !important; }
+.rooms .room-selector::after { background: transparent !important; }
+
+
+/* CTA: brick multiply overlay applied over the full background image */
+.final-cta{
+  position:relative;
+  isolation:isolate;
+  background-image:url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=85");
+  background-position:center 52%;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+.final-cta::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+  background:#783E38;
+  mix-blend-mode:multiply;
+  opacity:1;
+  pointer-events:none;
+}
+.final-cta .wrap{position:relative;z-index:1}
+
+</style>
+
+<style id="room-card-colors-match-tabs-v13">
+/* Room card colors now exactly match their corresponding tab colors. */
+.rooms .room-selector.room-tone-deluxe{--room-panel:#171917;--room-text:#f0eee8;--room-muted:rgba(240,238,232,.78)}
+.rooms .room-selector.room-tone-superior{--room-panel:#8dc63f;--room-text:#171917;--room-muted:rgba(23,25,23,.82)}
+.rooms .room-selector.room-tone-family{--room-panel:#e9e6de;--room-text:#171917;--room-muted:rgba(23,25,23,.78)}
+.rooms .room-feature{background:var(--room-panel)!important;color:var(--room-text)!important}
+.rooms .room-info,
+.rooms .room-info h3,
+.rooms .room-facilities-title,
+.rooms .room-facilities,
+.rooms .room-enquire{color:var(--room-text)!important}
+.rooms .room-info p,
+.rooms .room-info .eyebrow{color:var(--room-muted)!important}
+.rooms .room-enquire{border-color:var(--room-text)!important}
+.rooms .room-chip[data-room="0"]{background:#171917!important;color:#f0eee8!important}
+.rooms .room-chip[data-room="1"]{background:#8dc63f!important;color:#171917!important}
+.rooms .room-chip[data-room="2"]{background:#e9e6de!important;color:#171917!important}
+.rooms .room-chip.active{background:var(--room-panel)!important;color:var(--room-text)!important}
+
+
+/* CTA: brick multiply overlay applied over the full background image */
+.final-cta{
+  position:relative;
+  isolation:isolate;
+  background-image:url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=85");
+  background-position:center 52%;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+.final-cta::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+  background:#783E38;
+  mix-blend-mode:multiply;
+  opacity:1;
+  pointer-events:none;
+}
+.final-cta .wrap{position:relative;z-index:1}
+
+</style>
+
+<style id="room-type-superior-brick-and-deluxe-bullet-fix">
+/* Superior: keep its tab and information card on the same Arjuna brick color. */
+.rooms .room-selector.room-tone-superior{--room-panel:#6f312b!important;--room-text:#f0eee8!important;--room-muted:rgba(240,238,232,.82)!important}
+.rooms .room-chip[data-room="1"],
+.rooms .room-chip[data-room="1"]:hover,
+.rooms .room-chip[data-room="1"]:active,
+.rooms .room-chip[data-room="1"]:focus,
+.rooms .room-chip[data-room="1"]:focus-visible,
+.rooms .room-chip.active[data-room="1"]{background:#6f312b!important;color:#f0eee8!important}
+.rooms .room-selector.room-tone-superior .room-feature{background:#6f312b!important;color:#f0eee8!important}
+/* Deluxe facility bullet markers use the Arjuna green accent. */
+.rooms .room-selector.room-tone-deluxe .room-facilities li::marker{color:#8dc63f!important}
+
+
+/* CTA: brick multiply overlay applied over the full background image */
+.final-cta{
+  position:relative;
+  isolation:isolate;
+  background-image:url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=85");
+  background-position:center 52%;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+.final-cta::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+  background:#783E38;
+  mix-blend-mode:multiply;
+  opacity:1;
+  pointer-events:none;
+}
+.final-cta .wrap{position:relative;z-index:1}
+
+</style>
+
 </body></html>
